@@ -3,7 +3,7 @@ $(document).ready(function() {
     const pages = new Pageable("#container", {
         pips: false,
         animation: 0,
-        delay: 500,
+        delay: 1000,
         swipeThreshold: 100,
         onBeforeStart: function (index) {
             let page = this.pages[this.oldIndex]
@@ -23,7 +23,7 @@ $(document).ready(function() {
                 container.addClass("isLocked")
                 setTimeout(function () {
                     container.removeClass("isLocked")
-                }, 1000)
+                }, 2000)
 
                 if (animationsSteps || (isMobile && animationsMobSteps)) {
                     if (this.index < this.oldIndex) {
