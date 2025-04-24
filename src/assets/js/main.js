@@ -19,7 +19,7 @@ $(document).ready(function() {
             let isMobile = window.innerWidth <= 768;
             let container = $("#loading-section")
 
-            if (!container.hasClass("isLocked")) {
+            /*if (!container.hasClass("isLocked")) {
                 container.addClass("isLocked")
                 setTimeout(function () {
                     container.removeClass("isLocked")
@@ -86,7 +86,8 @@ $(document).ready(function() {
 
             } else {
                 this.index = this.oldIndex
-            }
+            }*/
+            page.classList.remove("pg-active")
         },
         onStart: function() {
 
@@ -225,6 +226,15 @@ $(document).ready(function() {
 
                 }
             }
+        });
+    }
+
+    if ($(".test-swiper")) {
+        new Swiper('.test-swiper', {
+            direction: "vertical",
+            loop: false,
+            slidesPerView: 1,
+            speed: 1000,
         });
     }
 
