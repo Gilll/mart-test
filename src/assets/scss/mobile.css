@@ -29,8 +29,9 @@
   .animation-button-height {
     width: 19rem;
   }
-  .pg-active .animation-button-height {
-    height: 19rem;
+  .show.animation-button-height {
+    height: 19rem !important;
+    transition: 1s 1s;
   }
   .round-button:hover {
     margin-top: 0.5rem;
@@ -91,7 +92,7 @@
     width: 1.6rem;
     height: 1.6rem;
   }
-  .pg-active .main-view__arrow {
+  .show.main-view__arrow {
     height: 1.7rem;
   }
   .main-view__gray-line {
@@ -123,7 +124,8 @@
   .projects-top__content {
     width: 36.1rem;
     display: block;
-    padding-top: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .projects-top__title {
     font-size: 3.2rem;
@@ -146,12 +148,18 @@
   .projects-top__spacer2 {
     height: 4.7rem;
   }
-  .pg-active.animation-state-0 .projects-top {
-    height: 46rem;
-  }
   .primary-button__text {
     font-size: 1rem;
     padding-top: 0.2rem;
+  }
+  .projects-top {
+    height: 36.6rem !important;
+    position: relative !important;
+  }
+  .projects-swiper-box {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
   }
   .primary-button__circle-anchor {
     height: 1.8rem;
@@ -170,7 +178,7 @@
     top: -2.2rem;
     left: -2.2rem;
   }
-  .pg-active .primary-button__circle-animation {
+  .show .primary-button__circle-animation {
     width: 6.2rem;
     height: 6.2rem;
     top: -2.2rem;
@@ -180,20 +188,20 @@
     bottom: 17.1428571429vh;
     right: 1.6rem;
   }
-  .pg-active.animation-state-0 .projects-swiper__navigation {
+  .intoAnimation .projects-swiper__navigation {
     bottom: 17.1428571429vh;
   }
-  .pg-active.animation-state-1 .projects-swiper__navigation {
+  .intoAnimation .projects-swiper__navigation {
     bottom: 37.1428571429vh;
   }
   .projects__gray-line {
     bottom: 22.8571428571vh;
   }
-  .pg-active.animation-state-0 .projects__gray-line {
+  .intoAnimation .projects__gray-line {
     bottom: 22.8571428571vh;
   }
-  .pg-active.animation-state-1 .projects__gray-line {
-    bottom: 42.8571428571vh;
+  .intoAnimation .projects__gray-line {
+    bottom: 43.1428571429vh;
   }
   .projects-swiper-slide__content {
     left: 1.6rem;
@@ -202,10 +210,10 @@
     bottom: 18.5714285714vh;
     width: 25rem;
   }
-  .pg-active.animation-state-0 .projects-swiper-slide__content {
+  .intoAnimation .projects-swiper-slide__content {
     bottom: 18.5714285714vh;
   }
-  .pg-active.animation-state-1 .projects-swiper-slide__content {
+  .intoAnimation .projects-swiper-slide__content {
     bottom: 38.5714285714vh;
   }
   .projects-swiper-slide__title {
@@ -224,8 +232,21 @@
     bottom: 0;
     left: 18.2rem;
   }
-  .pg-active.projects-section.animation-state-1 .animation-button-height {
+  .intoAnimation.projects-section .animation-button-height {
     height: 19.5rem;
+  }
+  .projects {
+    height: 114.9rem;
+    overflow-y: hidden;
+  }
+  .gray-line {
+    width: 1px;
+    height: 0.1rem;
+    background-color: rgba(255, 254, 248, 0.3);
+    transition: 0.2s 0s linear;
+  }
+  .mb-8 {
+    margin-bottom: 8rem;
   }
   .supervisors__top {
     width: 36.1rem;
@@ -237,7 +258,10 @@
     font-size: 3.2rem;
     line-height: 1.1;
   }
-  .pg-active .mid-size .animation-button-height {
+  .supervisors {
+    height: 97.6rem;
+  }
+  .intoAnimation .mid-size .animation-button-height {
     height: 19rem;
   }
   .mid-size .round-button {
@@ -266,7 +290,6 @@
   .supervisors__content {
     width: 36.1rem;
     padding-top: 2rem;
-    height: 50rem;
     position: relative;
   }
   .supervisors__content-top {
@@ -311,10 +334,10 @@
     width: 23.5rem;
     margin-right: 0;
   }
-  .pg-active .supervisors__content-first {
+  .intoAnimation .supervisors__content-first {
     height: 25rem;
   }
-  .pg-active .supervisors__content-second {
+  .intoAnimation .supervisors__content-second {
     height: 25rem;
   }
   .supervisors__content-text {
@@ -328,39 +351,15 @@
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .supervisors__content-top {
+  .intoAnimation .supervisors__content-top {
     height: 17rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .supervisors__content-top {
-    height: 0;
-    transition: 1s;
-  }
-  .pg-active.animation-state-2 .supervisors__content-top {
-    height: 0;
-    transition: 1s;
-  }
-  .pg-active.animation-state-0 .supervisors__content-text-1 {
-    height: 0;
-    transition: 1s;
-  }
-  .pg-active.animation-state-1 .supervisors__content-text-1 {
+  .intoAnimation .supervisors__content-text-1 {
     height: 14rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .supervisors__content-text-1 {
-    height: 0;
-    transition: 1s;
-  }
-  .pg-active.animation-state-0 .supervisors__content-text-2 {
-    height: 0;
-    transition: 1s;
-  }
-  .pg-active.animation-state-1 .supervisors__content-text-2 {
-    height: 0;
-    transition: 1s;
-  }
-  .pg-active.animation-state-2 .supervisors__content-text-2 {
+  .intoAnimation .supervisors__content-text-2 {
     height: 14rem;
     transition: 1s;
   }
@@ -373,60 +372,74 @@
     bottom: -2.4rem;
   }
   .supervisors__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    padding-bottom: 3rem;
+    height: auto;
   }
   .design-components__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   interiors__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .design-steps__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .faq__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .project-support__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
     padding-bottom: 0;
+    height: auto;
   }
   .project-details__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .price-assembly__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .price-supervision__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .prices-design__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .about-advantages__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .about-advantages__img {
     display: none;
   }
   .feedback__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .result__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .result__content {
     width: 36.1rem;
@@ -434,24 +447,29 @@
     display: block;
   }
   .piter__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .services__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .steps__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .services-desc__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .specialists__scroll {
-    padding-top: 7rem;
+    padding-top: 0;
     min-height: 0;
+    height: auto;
   }
   .services__gray-line {
     display: none;
@@ -496,7 +514,7 @@
   .services__container {
     padding: 1rem 0;
   }
-  .pg-active .services-list__item-animation {
+  .intoAnimation .services-list__item-animation {
     height: 38.5rem;
   }
   .services-list__img-wrapper {
@@ -518,15 +536,15 @@
     transform: translateY(105%);
     transition: 0.3s;
   }
-  .pg-active .services-list__description {
+  .intoAnimation .services-list__description {
     transform: translateY(0);
     transition: 1s 1.2s;
   }
-  .pg-active.animation-state-0 .services-list__item {
+  .intoAnimation .services-list__item {
     transform: translateY(0);
     transition: 1s;
   }
-  .pg-active.animation-state-1 .services-list__item {
+  .intoAnimation .services-list__item {
     transform: translateY(-42.5rem);
     transition: 1s;
   }
@@ -577,7 +595,7 @@
     height: 36.2rem;
     margin-bottom: 1.6rem;
   }
-  .pg-active .services-desc__img-animation {
+  .intoAnimation .services-desc__img-animation {
     width: 100%;
     height: 36.2rem;
   }
@@ -592,15 +610,15 @@
   .services-desc__text-spicer {
     height: 2rem;
   }
-  .pg-active.animation-state-0 .services-desc__top {
+  .intoAnimation .services-desc__top {
     height: 16.7rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .services-desc__top {
+  .intoAnimation .services-desc__top {
     height: 10.6rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .services-desc__top {
+  .intoAnimation .services-desc__top {
     height: 10.6rem;
     transition: 1s;
   }
@@ -608,16 +626,16 @@
     position: relative;
     overflow: hidden;
   }
-  .pg-active.animation-state-0 .services-desc__col:first-child .services-desc__img-wrapper {
+  .intoAnimation .services-desc__col:first-child .services-desc__img-wrapper {
     height: 36.2rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .services-desc__col:first-child .services-desc__img-wrapper {
+  .intoAnimation .services-desc__col:first-child .services-desc__img-wrapper {
     height: 0;
     margin-bottom: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .services-desc__col:first-child .services-desc__img-wrapper {
+  .intoAnimation .services-desc__col:first-child .services-desc__img-wrapper {
     height: 0;
     margin-bottom: 0;
     transition: 1s;
@@ -625,32 +643,32 @@
   .services-desc__col:first-child {
     margin-bottom: 4rem;
   }
-  .pg-active.animation-state-0 .services-desc__col:first-child {
+  .intoAnimation .services-desc__col:first-child {
     height: 50rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .services-desc__col:first-child {
+  .intoAnimation .services-desc__col:first-child {
     height: 20.5rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .services-desc__col:first-child {
+  .intoAnimation .services-desc__col:first-child {
     height: 0;
     margin-bottom: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .services-desc__content {
+  .intoAnimation .services-desc__content {
     height: 50rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .services-desc__content {
+  .intoAnimation .services-desc__content {
     height: 60rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .services-desc__content {
+  .intoAnimation .services-desc__content {
     height: 60rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .services-desc__col:last-child {
+  .intoAnimation .services-desc__col:last-child {
     height: 60rem;
     transition: 1s;
   }
@@ -668,15 +686,15 @@
     width: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .services-desc__gray-line {
+  .intoAnimation .services-desc__gray-line {
     width: 100%;
     transition: 1s 1s;
   }
-  .pg-active.animation-state-1 .services-desc__gray-line {
+  .intoAnimation .services-desc__gray-line {
     width: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .services-desc__gray-line {
+  .intoAnimation .services-desc__gray-line {
     width: 0;
     transition: 1s;
   }
@@ -715,7 +733,7 @@
   .specialists-swiper__img img {
     width: 100%;
   }
-  .pg-active .specialists-swiper__img img {
+  .intoAnimation .specialists-swiper__img img {
     height: 36.2rem;
   }
   .specialists-swiper__text {
@@ -723,7 +741,7 @@
     height: 11.4rem;
     margin-top: 2.4rem;
   }
-  .pg-active .mid-size .animation-button-height {
+  .intoAnimation .mid-size .animation-button-height {
     width: 19rem;
   }
   .specialists__button-anchor {
@@ -775,7 +793,7 @@
     margin-top: 0;
     margin-bottom: 1.6rem;
   }
-  .pg-active.animation-state-0 .premium__top {
+  .intoAnimation .premium__top {
     height: 52rem;
   }
   .premium__button {
@@ -832,7 +850,7 @@
   .steps-list__img-wrapper {
     height: 25.6rem;
   }
-  .pg-active .steps-list__img-animation {
+  .intoAnimation .steps-list__img-animation {
     height: 25.6rem;
   }
   .steps-list__img-wrapper img {
@@ -872,94 +890,94 @@
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps-list__col:first-child {
+  .intoAnimation .steps-list__col:first-child {
     height: 27.2rem;
     margin-bottom: 4rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps-list__col:first-child {
+  .intoAnimation .steps-list__col:first-child {
     transform: translateY(0);
     height: 52rem;
     margin-bottom: 4rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps-list__col:first-child {
+  .intoAnimation .steps-list__col:first-child {
     height: 0;
     transform: translateY(-52rem);
     margin-bottom: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps-list__img-wrapper {
+  .intoAnimation .steps-list__img-wrapper {
     height: 25.6rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps-list__img-wrapper {
+  .intoAnimation .steps-list__img-wrapper {
     height: 13rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps-list__img-wrapper {
+  .intoAnimation .steps-list__img-wrapper {
     height: 13rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps-list__img-wrapper img {
+  .intoAnimation .steps-list__img-wrapper img {
     height: 25.6rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps-list__img-wrapper img {
+  .intoAnimation .steps-list__img-wrapper img {
     height: 13rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps-list__img-wrapper img {
+  .intoAnimation .steps-list__img-wrapper img {
     height: 13rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps-list__img-animation {
+  .intoAnimation .steps-list__img-animation {
     height: 25.6rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps-list__img-animation {
+  .intoAnimation .steps-list__img-animation {
     height: 13rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps-list__img-animation {
+  .intoAnimation .steps-list__img-animation {
     height: 13rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps-list__col .steps-list__title {
+  .intoAnimation .steps-list__col .steps-list__title {
     height: 0;
     margin-bottom: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps-list__col .steps-list__title {
+  .intoAnimation .steps-list__col .steps-list__title {
     height: 1.7rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps-list__col .steps-list__title {
+  .intoAnimation .steps-list__col .steps-list__title {
     height: 1.7rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps-list__items {
+  .intoAnimation .steps-list__items {
     height: 0;
     margin-bottom: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps-list__items {
+  .intoAnimation .steps-list__items {
     height: 29.5rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps-list__items {
+  .intoAnimation .steps-list__items {
     height: 29.5rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps__title {
+  .intoAnimation .steps__title {
     font-size: 3.2rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps__title {
+  .intoAnimation .steps__title {
     font-size: 1.6rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps__title {
+  .intoAnimation .steps__title {
     font-size: 1.6rem;
     transition: 1s;
   }
@@ -969,30 +987,30 @@
     position: relative;
     overflow: hidden;
   }
-  .pg-active.animation-state-0 .steps__content {
+  .intoAnimation .steps__content {
     padding-top: 12.4rem;
     height: 55.6rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps__content {
+  .intoAnimation .steps__content {
     height: 66rem;
     padding-top: 3rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps__content {
+  .intoAnimation .steps__content {
     height: 65rem;
     padding-top: 3rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .steps-list {
+  .intoAnimation .steps-list {
     height: 27.2rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .steps-list {
+  .intoAnimation .steps-list {
     height: 50rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .steps-list {
+  .intoAnimation .steps-list {
     height: 50rem;
     transition: 1s;
   }
@@ -1011,7 +1029,7 @@
   .piter__title br {
     display: none;
   }
-  .pg-active .piter__title-animation {
+  .intoAnimation .piter__title-animation {
     height: 22rem;
   }
   .piter__row {
@@ -1043,7 +1061,7 @@
     width: 17.2rem;
     height: 23.8rem;
   }
-  .pg-active .piter__left-img-animation {
+  .intoAnimation .piter__left-img-animation {
     height: 23.8rem;
   }
   .piter__right {
@@ -1065,19 +1083,19 @@
   .piter__right-text:last-child {
     width: 36.1rem;
   }
-  .pg-active.animation-state-0 .piter__right-text:last-child {
+  .intoAnimation .piter__right-text:last-child {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .piter__right-text:last-child {
+  .intoAnimation .piter__right-text:last-child {
     height: 8rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .piter__right-text:first-child {
+  .intoAnimation .piter__right-text:first-child {
     height: 22rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .piter__right-text:first-child {
+  .intoAnimation .piter__right-text:first-child {
     height: 0;
     transition: 1s;
   }
@@ -1085,11 +1103,11 @@
     position: relative;
     overflow: hidden;
   }
-  .pg-active.animation-state-0 .piter__left-img {
+  .intoAnimation .piter__left-img {
     height: 23.8rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .piter__left-img {
+  .intoAnimation .piter__left-img {
     height: 0;
     transition: 1s;
   }
@@ -1103,25 +1121,25 @@
     width: 100%;
     height: 17.1rem;
   }
-  .pg-active.animation-state-0 .piter__middle {
+  .intoAnimation .piter__middle {
     height: 0rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .piter__middle {
+  .intoAnimation .piter__middle {
     height: 17.1rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .piter__right {
+  .intoAnimation .piter__right {
     width: 17.3rem;
     transition: 1s;
     bottom: 2rem;
   }
-  .pg-active.animation-state-1 .piter__right {
+  .intoAnimation .piter__right {
     width: 100%;
     transition: 1s;
     bottom: -3rem;
   }
-  .pg-active .piter__middle-animation {
+  .intoAnimation .piter__middle-animation {
     height: 17.1rem;
   }
   .piter__row {
@@ -1153,7 +1171,7 @@
   .result-swiper__slide-animation {
     width: 100%;
   }
-  .pg-active .result-swiper__slide-animation {
+  .intoAnimation .result-swiper__slide-animation {
     width: 100%;
     height: 30rem;
   }
@@ -1238,7 +1256,7 @@
     width: 100%;
     height: 25.1rem;
   }
-  .pg-active .feedback__img-animation {
+  .intoAnimation .feedback__img-animation {
     height: 25.1rem;
   }
   .feedback__top {
@@ -1255,37 +1273,37 @@
     margin-bottom: 2.4rem;
     font-size: 2rem;
   }
-  .pg-active.animation-state-0 .feedback-form {
+  .intoAnimation .feedback-form {
     height: 36.8rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .feedback-form {
+  .intoAnimation .feedback-form {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .feedback__img {
+  .intoAnimation .feedback__img {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .feedback__img {
+  .intoAnimation .feedback__img {
     height: 25.1rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .feedback__top {
+  .intoAnimation .feedback__top {
     height: 22.5rem;
     padding-bottom: 4rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .feedback__top {
+  .intoAnimation .feedback__top {
     height: 0;
     padding-bottom: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .feedback__info {
+  .intoAnimation .feedback__info {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .feedback__info {
+  .intoAnimation .feedback__info {
     height: 30rem;
     transition: 1s;
   }
@@ -1354,13 +1372,13 @@
     position: relative;
     overflow: hidden;
   }
-  .pg-active.animation-state-0 .contacts-page__bg {
+  .intoAnimation .contacts-page__bg {
     height: 100vh;
   }
-  .pg-active.animation-state-1 .contacts-page__bg {
+  .intoAnimation .contacts-page__bg {
     height: 8rem;
   }
-  .pg-active.animation-state-0 .contacts-page__bg-animation {
+  .intoAnimation .contacts-page__bg-animation {
     height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -1428,39 +1446,39 @@
     overflow: hidden;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .prices-design__item:first-child {
+  .intoAnimation .prices-design__item:first-child {
     height: 55rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .prices-design__item:first-child {
+  .intoAnimation .prices-design__item:first-child {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .prices-design__item:first-child {
+  .intoAnimation .prices-design__item:first-child {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .prices-design__item:last-child {
+  .intoAnimation .prices-design__item:last-child {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .prices-design__item:last-child {
+  .intoAnimation .prices-design__item:last-child {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .prices-design__item:last-child {
+  .intoAnimation .prices-design__item:last-child {
     height: 55rem;
     transition: 1s;
   }
-  .pg-active.animation-state-0 .prices-design__item:nth-child(2) {
+  .intoAnimation .prices-design__item:nth-child(2) {
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .prices-design__item:nth-child(2) {
+  .intoAnimation .prices-design__item:nth-child(2) {
     height: 55rem;
     transition: 1s;
   }
-  .pg-active.animation-state-2 .prices-design__item:nth-child(2) {
+  .intoAnimation .prices-design__item:nth-child(2) {
     height: 0;
     transition: 1s;
   }
@@ -1506,11 +1524,11 @@
     height: 30rem;
     margin-bottom: 3.2rem;
   }
-  .pg-active .price-supervision__img-animation img {
+  .intoAnimation .price-supervision__img-animation img {
     width: 100%;
     height: 30rem;
   }
-  .pg-active .price-supervision__img-animation {
+  .intoAnimation .price-supervision__img-animation {
     height: 30rem;
   }
   .price-supervision__button-anchor {
@@ -1587,7 +1605,7 @@
   .projects-top__menu-item:last-child {
     border-bottom: 0;
   }
-  .pg-active.animation-state-0 .projects-top.project-page {
+  .intoAnimation .projects-top.project-page {
     height: 50.6rem;
   }
   .projects-top__menu-right {
@@ -1667,15 +1685,15 @@
     bottom: 0;
     z-index: 1;
   }
-  .pg-active.animation-state-0 .project-details__left {
+  .intoAnimation .project-details__left {
     height: 50rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .project-details__middle {
+  .intoAnimation .project-details__middle {
     height: 42rem;
     transition: 1s;
   }
-  .pg-active .project-details__middle-animation {
+  .intoAnimation .project-details__middle-animation {
     height: 42rem;
   }
   .project-details__middle img {
@@ -1691,7 +1709,7 @@
     position: relative;
     overflow: hidden;
   }
-  .pg-active.animation-state-1 .project-details__right-text:first-child {
+  .intoAnimation .project-details__right-text:first-child {
     height: 0;
     transition: 1s;
   }
@@ -1699,7 +1717,7 @@
     height: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .project-details__right-text:last-child {
+  .intoAnimation .project-details__right-text:last-child {
     height: 5.1rem;
     transition: 1s;
   }
@@ -1713,7 +1731,7 @@
   .project-description__top-item {
     width: 21rem;
   }
-  .pg-active .project-description__top-item {
+  .intoAnimation .project-description__top-item {
     height: 8.9rem;
   }
   .project-description__top-right {
@@ -1802,11 +1820,11 @@
     margin-bottom: 0;
     transition: 1s;
   }
-  .animation-state-0 .services-section__top {
+  .services-section__top {
     margin-bottom: 4rem;
     transition: 1s;
   }
-  .animation-state-0 .services-section__sub-title {
+  .services-section__sub-title {
     margin-bottom: 1.6rem;
     transition: 1s;
   }
@@ -1819,7 +1837,7 @@
   .services-section__row-animation {
     width: 36.1rem;
   }
-  .pg-active .services-section__row-animation {
+  .intoAnimation .services-section__row-animation {
     height: 94.4rem;
     display: block;
   }
@@ -1842,24 +1860,24 @@
     bottom: 2.4rem;
     height: 14.5rem;
   }
-  .pg-active.animation-state-2 .services-section__animation-scroll, .animation-state-2 .services-section__animation-scroll {
+  .intoAnimation .services-section__animation-scroll, .services-section__animation-scroll {
     transform: translateY(-69.2rem);
   }
-  .pg-active.animation-state-3 .services-section__animation-scroll, .animation-state-3 .services-section__animation-scroll {
+  .intoAnimation.animation-state-3 .services-section__animation-scroll, .animation-state-3 .services-section__animation-scroll {
     transform: translateY(-117.2rem);
     transition: 1s;
   }
-  .pg-active.animation-state-4 .services-section__animation-scroll, .animation-state-4 .services-section__animation-scroll {
+  .intoAnimation.animation-state-4 .services-section__animation-scroll, .animation-state-4 .services-section__animation-scroll {
     transform: translateY(-166.2rem);
     transition: 1s;
   }
   .services-section__item img {
     transform: scale(1.2) !important;
   }
-  .animation-state-1 .row1 .services-section__item:first-child img {
+  .row1 .services-section__item:first-child img {
     transform: scale(1) !important;
   }
-  .animation-state-2 .row1 .services-section__item:last-child img {
+  .row1 .services-section__item:last-child img {
     transform: scale(1) !important;
   }
   .animation-state-3 .row2 .services-section__item:first-child img {
@@ -1871,38 +1889,38 @@
   .services-section__item-bottom-text-animation {
     transform: translateY(-105%) !important;
   }
-  .pg-active.animation-state-1 .row1 .services-section__item:first-child .services-section__item-bottom-text-animation {
+  .intoAnimation .row1 .services-section__item:first-child .services-section__item-bottom-text-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
-  .pg-active.animation-state-2 .row1 .services-section__item:last-child .services-section__item-bottom-text-animation {
+  .intoAnimation .row1 .services-section__item:last-child .services-section__item-bottom-text-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
-  .pg-active.animation-state-3 .row2 .services-section__item:first-child .services-section__item-bottom-text-animation {
+  .intoAnimation.animation-state-3 .row2 .services-section__item:first-child .services-section__item-bottom-text-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
-  .pg-active.animation-state-4 .row2 .services-section__item:last-child .services-section__item-bottom-text-animation {
+  .intoAnimation.animation-state-4 .row2 .services-section__item:last-child .services-section__item-bottom-text-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
   .services-section__item-bottom-button-animation {
     transform: translateY(105%) !important;
   }
-  .pg-active.animation-state-1 .row1 .services-section__item:first-child .services-section__item-bottom-button-animation {
+  .intoAnimation .row1 .services-section__item:first-child .services-section__item-bottom-button-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
-  .pg-active.animation-state-2 .row1 .services-section__item:last-child .services-section__item-bottom-button-animation {
+  .intoAnimation .row1 .services-section__item:last-child .services-section__item-bottom-button-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
-  .pg-active.animation-state-3 .row2 .services-section__item:first-child .services-section__item-bottom-button-animation {
+  .intoAnimation.animation-state-3 .row2 .services-section__item:first-child .services-section__item-bottom-button-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
-  .pg-active.animation-state-4 .row2 .services-section__item:last-child .services-section__item-bottom-button-animation {
+  .intoAnimation.animation-state-4 .row2 .services-section__item:last-child .services-section__item-bottom-button-animation {
     transform: translateY(0) !important;
     transition: 1s 0.5s;
   }
@@ -2000,13 +2018,13 @@
   .project-support__right br {
     display: none;
   }
-  .pg-active.animation-state-0 .architecture .services-desc__top {
+  .intoAnimation .architecture .services-desc__top {
     height: 10.6rem;
   }
-  .pg-active.animation-state-0 .architecture .services-desc__col:first-child .services-desc__img-wrapper {
+  .intoAnimation .architecture .services-desc__col:first-child .services-desc__img-wrapper {
     height: 25rem;
   }
-  .pg-active .architecture .services-desc__img-animation {
+  .intoAnimation .architecture .services-desc__img-animation {
     height: 25rem;
   }
   .architecture .services-desc__img-wrapper img {
@@ -2019,54 +2037,54 @@
     height: 0;
     transition: 1s;
   }
-  .animation-state-0 .architecture .services-desc__col:last-child .services-desc__text {
+  .architecture .services-desc__col:last-child .services-desc__text {
     height: 0;
     transition: 1s;
     overflow: hidden;
   }
-  .animation-state-1 .architecture .services-desc__col:last-child .services-desc__text {
+  .architecture .services-desc__col:last-child .services-desc__text {
     height: 0;
     overflow: hidden;
     transition: 1s;
   }
-  .animation-state-2 .architecture .services-desc__col:last-child .services-desc__text {
+  .architecture .services-desc__col:last-child .services-desc__text {
     height: 21rem;
     transition: 1s;
     overflow: hidden;
   }
-  .animation-state-0 .architecture .mid-size .animation-button-height {
+  .architecture .mid-size .animation-button-height {
     height: 0;
     transition: 0.3s !important;
   }
-  .animation-state-1 .architecture .mid-size .animation-button-height {
+  .architecture .mid-size .animation-button-height {
     height: 0;
     transition: 0.3s !important;
   }
-  .animation-state-2 .architecture .mid-size .animation-button-height {
+  .architecture .mid-size .animation-button-height {
     height: 19rem;
     transition: 1s;
   }
-  .animation-state-0 .architecture .mid-size .main-view__arrow {
+  .architecture .mid-size .main-view__arrow {
     height: 0;
     transition: 0.3s !important;
   }
-  .animation-state-1 .architecture .mid-size .main-view__arrow {
+  .architecture .mid-size .main-view__arrow {
     height: 0;
     transition: 0.3s !important;
   }
-  .animation-state-2 .architecture .mid-size .main-view__arrow {
+  .architecture .mid-size .main-view__arrow {
     height: 1.7rem;
     transition: 1s;
   }
-  .animation-state-0 .architecture .mid-size .main-view__button-text {
+  .architecture .mid-size .main-view__button-text {
     height: 0;
     transition: 0.3s !important;
   }
-  .animation-state-1 .architecture .mid-size .main-view__button-text {
+  .architecture .mid-size .main-view__button-text {
     height: 0;
     transition: 0.3s !important;
   }
-  .animation-state-2 .architecture .mid-size .main-view__button-text {
+  .architecture .mid-size .main-view__button-text {
     height: 4rem;
     transition: 1s;
   }
@@ -2082,10 +2100,10 @@
     margin-bottom: 0;
     margin-top: 1.6rem;
   }
-  .pg-active.animation-state-1 .architecture .services-desc__content {
+  .intoAnimation .architecture .services-desc__content {
     height: 50rem;
   }
-  .pg-active.animation-state-2 .architecture .services-desc__content {
+  .intoAnimation .architecture .services-desc__content {
     height: 50rem;
   }
   .architecture .services-desc__button-anchor.mob {
@@ -2104,14 +2122,14 @@
     opacity: 0;
     transform-origin: bottom;
   }
-  .pg-active.animation-state-0 .project-support__item {
+  .intoAnimation .project-support__item {
     height: 0;
     border-bottom: 0;
     transform: scale(0);
     opacity: 0;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .project-support__item {
+  .intoAnimation .project-support__item {
     height: 7.2rem;
     opacity: 1;
     transform: scale(1);
@@ -2123,11 +2141,11 @@
     position: relative;
     overflow: hidden;
   }
-  .pg-active.animation-state-0 .project-support__img {
+  .intoAnimation .project-support__img {
     height: 30rem;
     transition: 1s;
   }
-  .pg-active.animation-state-1 .project-support__img {
+  .intoAnimation .project-support__img {
     height: 0;
     transition: 1s;
   }
@@ -2155,7 +2173,7 @@
     padding-right: 0;
     margin: 0 auto;
   }
-  .pg-active .faq__right-animation {
+  .intoAnimation .faq__right-animation {
     width: 36.1rem;
   }
   .faq-list {
@@ -2232,7 +2250,7 @@
     width: 100%;
     height: 20rem;
   }
-  .pg-active .design-steps__img-animation {
+  .intoAnimation .design-steps__img-animation {
     height: 20rem;
   }
   .design-steps__img {
@@ -2251,16 +2269,16 @@
   .steps.compl .steps__button-anchor {
     top: 0;
   }
-  .pg-active.animation-state-0 .compl .steps__content {
+  .intoAnimation .compl .steps__content {
     padding-top: 13.4rem;
   }
-  .pg-active.animation-state-0 .compl .steps__title {
+  .intoAnimation .compl .steps__title {
     margin-bottom: 4rem;
   }
-  .pg-active.animation-state-1 .compl .steps__title {
+  .intoAnimation .compl .steps__title {
     margin-bottom: 14.4rem;
   }
-  .pg-active.animation-state-2 .compl .steps__title {
+  .intoAnimation .compl .steps__title {
     margin-bottom: 14.4rem;
   }
   .interiors__top-description {
@@ -2306,7 +2324,7 @@
     width: 100%;
     height: 26rem;
   }
-  .pg-active .interiors-swiper-slide__img-animation {
+  .intoAnimation .interiors-swiper-slide__img-animation {
     height: 26rem;
   }
   .interiors.compl .interiors-swiper-slide__item:first-child .interiors-swiper-slide__content {
@@ -2417,7 +2435,7 @@
     height: 30rem;
     margin-bottom: 4rem;
   }
-  .pg-active .design-components__img-animation {
+  .intoAnimation .design-components__img-animation {
     width: 100%;
     height: 30rem;
   }

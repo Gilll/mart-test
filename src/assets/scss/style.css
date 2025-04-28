@@ -56,13 +56,18 @@ a a:visited {
 
 section {
   position: relative;
-  overflow-y: auto;
   overflow-x: hidden;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 section.main-view {
   overflow-y: hidden;
+}
+
+.projects-swiper {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .main-view__container {
@@ -225,7 +230,6 @@ section.main-view {
 .projects-top {
   width: 100%;
   background-color: #FFFEF8;
-  position: absolute;
   overflow: hidden;
   z-index: 99;
   height: 0;
@@ -357,12 +361,6 @@ section.main-view {
   transition: 0.3s;
 }
 
-.pg-active .primary-button__circle-animation {
-  height: 7.8rem;
-  width: 7.8rem;
-  transition: 1s;
-}
-
 .primary-button__circle-animation {
   overflow: hidden;
   top: -2.6rem;
@@ -372,14 +370,9 @@ section.main-view {
   transition: 0.3s;
 }
 
-.pg-active.animation-state-0 .projects-top {
+.intoAnimation .projects-top {
   height: 40.6rem;
   transition: 0.5s;
-}
-
-.pg-active.animation-state-1 .projects-top {
-  height: 0;
-  transition: 1s;
 }
 
 .projects-swiper {
@@ -424,6 +417,7 @@ section.main-view {
   position: relative;
   overflow: hidden;
   height: 0;
+  transition: 0.3s;
 }
 .projects-swiper-slide__text-animation-wrapper {
   height: 2rem;
@@ -444,6 +438,7 @@ section.main-view {
   position: relative;
   overflow: hidden;
   height: 0;
+  transition: 0.3s;
 }
 .projects-swiper-slide__title-animation-wrapper {
   height: 7.2rem;
@@ -460,7 +455,6 @@ section.main-view {
   height: 0.1rem;
   position: absolute;
   left: 0;
-  background-color: rgba(255, 254, 248, 0.3);
   bottom: 28.5555555556vh;
   z-index: 99;
   transition: 0.3s;
@@ -497,22 +491,22 @@ section.main-view {
   transition: 0.3s;
 }
 
-.pg-active.animation-state-0 .projects-swiper__navigation {
+.intoAnimation.animation-state-0 .projects-swiper__navigation {
   bottom: 21.8888888889vh;
   transition: 1s;
 }
 
-.pg-active.animation-state-1 .projects-swiper__navigation {
+.intoAnimation.animation-state-1 .projects-swiper__navigation {
   bottom: 35.3333333333vh;
   transition: 1s;
 }
 
-.pg-active.animation-state-0 .projects-swiper__navigation-animation {
+.intoAnimation.animation-state-0 .projects-swiper__navigation-animation {
   transform: translateY(0);
   transition: 0.5s 2.5s;
 }
 
-.pg-active.animation-state-1 .projects-swiper__navigation-animation {
+.intoAnimation.animation-state-1 .projects-swiper__navigation-animation {
   transform: translateY(0);
   transition: 0.5s 1.5s;
 }
@@ -648,7 +642,7 @@ section.main-view {
   padding-bottom: 9rem;
 }
 
-.pg-active .mid-size .animation-button-height {
+.intoAnimation .mid-size .animation-button-height {
   height: 30.5rem;
   width: 30.5rem;
 }
@@ -657,12 +651,12 @@ section.main-view {
   width: 30.5rem;
 }
 
-.pg-active .services-desc__gray-line {
+.intoAnimation .services-desc__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active .services-desc__img-animation {
+.intoAnimation .services-desc__img-animation {
   height: 45rem;
   transition: 1s 0.3s;
 }
@@ -777,12 +771,12 @@ section.main-view {
   letter-spacing: 0.04em;
 }
 
-.pg-active .supervisors__content-first {
+.intoAnimation .supervisors__content-first {
   height: 40rem;
   transition: 1s 0.5s;
 }
 
-.pg-active .supervisors__content-second {
+.intoAnimation .supervisors__content-second {
   height: 40rem;
   transition: 1s 0.6s;
 }
@@ -868,7 +862,7 @@ section.main-view {
   width: 72rem;
 }
 
-.pg-active .services__gray-line {
+.intoAnimation .services__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
@@ -910,20 +904,20 @@ section.main-view {
   margin-top: 3rem;
 }
 
-.pg-active .services-list__item-animation {
+.intoAnimation .services-list__item-animation {
   height: 56rem;
   transition: 1s 0.3s;
 }
 
-.pg-active .services-list__item:nth-child(2) .services-list__item-animation {
+.intoAnimation .services-list__item:nth-child(2) .services-list__item-animation {
   transition: 1s 0.4s;
 }
 
-.pg-active .services-list__item:nth-child(3) .services-list__item-animation {
+.intoAnimation .services-list__item:nth-child(3) .services-list__item-animation {
   transition: 1s 0.5s;
 }
 
-.pg-active .services-list__item:nth-child(4) .services-list__item-animation {
+.intoAnimation .services-list__item:nth-child(4) .services-list__item-animation {
   transition: 1s 0.6s;
 }
 
@@ -976,7 +970,7 @@ section.main-view {
   z-index: 99;
 }
 
-.pg-active .specialists__gray-line {
+.intoAnimation .specialists__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
@@ -1052,17 +1046,17 @@ section.main-view {
   transition: 0.3s;
 }
 
-.pg-active .specialists-swiper__img img {
+.intoAnimation .specialists-swiper__img img {
   height: 75rem;
   transition: 1s 0.3s;
 }
 
-.pg-active .specialists-swiper__preview-img img {
+.intoAnimation .specialists-swiper__preview-img img {
   height: 34rem;
   transition: 1s 0.3s;
 }
 
-.pg-active .specialists-swiper__text-animation {
+.intoAnimation .specialists-swiper__text-animation {
   height: 30rem;
   transition: 1s 0.5s;
 }
@@ -1147,22 +1141,22 @@ section.main-view {
   display: flex;
 }
 
-.pg-active.animation-state-0 .premium__gray-line {
+.intoAnimation.animation-state-0 .premium__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active.animation-state-1 .premium__gray-line {
+.intoAnimation.animation-state-1 .premium__gray-line {
   width: 0;
   transition: 1s;
 }
 
-.pg-active.animation-state-0 .premium__top {
+.intoAnimation.animation-state-0 .premium__top {
   height: 40.4rem;
   transition: 1s;
 }
 
-.pg-active.animation-state-1 .premium__top {
+.intoAnimation.animation-state-1 .premium__top {
   height: 0;
   transition: 1s;
 }
@@ -1174,10 +1168,10 @@ section.main-view {
   animation: swiper-clip1-out 0.3s ease-in-out forwards;
 }
 
-.pg-active .swiper-slide-active .specialists-swiper__img img {
+.intoAnimation .swiper-slide-active .specialists-swiper__img img {
   animation: swiper-clip1 1s ease-in-out forwards;
 }
-.pg-active .swiper-slide-active .specialists-swiper__preview-img img {
+.intoAnimation .swiper-slide-active .specialists-swiper__preview-img img {
   animation: swiper-clip1 1s ease-in-out forwards;
 }
 
@@ -1249,7 +1243,7 @@ section.main-view {
   transition: 0.3s;
 }
 
-.pg-active .steps__gray-line {
+.intoAnimation .steps__gray-line {
   width: 100%;
   transition: 1s 1.5s;
 }
@@ -1307,12 +1301,12 @@ section.main-view {
   width: 48rem;
 }
 
-.pg-active .steps-list__img-animation {
+.intoAnimation .steps-list__img-animation {
   height: 30rem;
   transition: 1s 0.5s;
 }
 
-.pg-active .steps-list__gray-line {
+.intoAnimation .steps-list__gray-line {
   width: 100%;
   transition: 1s 1.5s;
 }
@@ -1429,32 +1423,32 @@ section.main-view {
   transition: 0.3s;
 }
 
-.pg-active .piter__middle-animation {
+.intoAnimation .piter__middle-animation {
   height: 45rem;
   transition: 1s 0.8s;
 }
 
-.pg-active .piter__left-img-animation {
+.intoAnimation .piter__left-img-animation {
   height: 25rem;
   transition: 1s 0.8s;
 }
 
-.pg-active .piter__left-img img {
+.intoAnimation .piter__left-img img {
   transform: scale(1);
   transition: 1s 1s;
 }
 
-.pg-active .piter__middle img {
+.intoAnimation .piter__middle img {
   transform: scale(1);
   transition: 1s 1s;
 }
 
-.pg-active .piter__title-animation {
+.intoAnimation .piter__title-animation {
   height: 20rem;
   transition: 1s;
 }
 
-.pg-active .piter__gray-line {
+.intoAnimation .piter__gray-line {
   width: 100%;
   transition: 1s 1.5s;
 }
@@ -1564,17 +1558,17 @@ section.main-view {
   overflow: hidden;
 }
 
-.pg-active .result-swiper__navigation {
+.intoAnimation .result-swiper__navigation {
   height: 2.6rem;
   transition: 0.5s 1s;
 }
 
-.pg-active .result-swiper__slide-animation {
+.intoAnimation .result-swiper__slide-animation {
   height: 72rem;
   transition: 1.9s;
 }
 
-.pg-active .swiper-slide-active .result-swiper__img {
+.intoAnimation .swiper-slide-active .result-swiper__img {
   animation: swiper-clip1 1s ease-in-out forwards;
 }
 
@@ -1710,17 +1704,17 @@ section.main-view {
   bottom: 0.1rem;
 }
 
-.pg-active .feedback__img-animation {
+.intoAnimation .feedback__img-animation {
   height: 42rem;
   transition: 1s 0.5s;
 }
 
-.pg-active .input-text {
+.intoAnimation .input-text {
   opacity: 1;
   transition: 1.5s 0.5s;
 }
 
-.pg-active .feedback__top-animation {
+.intoAnimation .feedback__top-animation {
   height: 18.5rem;
   transition: 1s 0.5s;
 }
@@ -1824,7 +1818,7 @@ input.input-text, textarea.input-text {
   justify-content: flex-end;
 }
 
-.pg-active .footer__gray-line {
+.intoAnimation .footer__gray-line {
   width: 100%;
   transition: 1s 1.5s;
 }
@@ -1966,32 +1960,32 @@ input.input-text, textarea.input-text {
   object-position: center;
 }
 
-.pg-active .prices__gray-line {
+.intoAnimation .prices__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active .prices__bg {
+.intoAnimation .prices__bg {
   height: 100%;
   transition: 1s;
 }
 
-.pg-active .services-section__row-animation {
+.intoAnimation .services-section__row-animation {
   height: 70rem;
   transition: 1s 0.5s;
 }
 
-.pg-active.animation-state-0 .services-section__animation-scroll, .animation-state-0 .services-section__animation-scroll {
+.intoAnimation.animation-state-0 .services-section__animation-scroll, .animation-state-0 .services-section__animation-scroll {
   transform: translateY(0);
   transition: 1s;
 }
 
-.pg-active.animation-state-1 .services-section__animation-scroll, .animation-state-1 .services-section__animation-scroll {
+.intoAnimation.animation-state-1 .services-section__animation-scroll, .animation-state-1 .services-section__animation-scroll {
   transform: translateY(-20.8rem);
   transition: 1s;
 }
 
-.pg-active.animation-state-2 .services-section__animation-scroll, .animation-state-2 .services-section__animation-scroll {
+.intoAnimation.animation-state-2 .services-section__animation-scroll, .animation-state-2 .services-section__animation-scroll {
   transform: translateY(-95.2rem);
   transition: 1s;
 }
@@ -2093,7 +2087,7 @@ input.input-text, textarea.input-text {
   transition: 0.3s;
 }
 
-.pg-active .prices-design__gray-line {
+.intoAnimation .prices-design__gray-line {
   width: 100%;
   transition: 1s 0.5s;
 }
@@ -2108,13 +2102,13 @@ input.input-text, textarea.input-text {
   overflow: hidden;
 }
 
-.pg-active.animation-state-0 .top-services-slide-up {
+.intoAnimation.animation-state-0 .top-services-slide-up {
   transform: translateY(0);
   transition: 1s 0.5s;
 }
 
-.pg-active.animation-state-1 .top-services-slide-up,
-.pg-active.animation-state-2 .top-services-slide-up {
+.intoAnimation.animation-state-1 .top-services-slide-up,
+.intoAnimation.animation-state-2 .top-services-slide-up {
   transform: translateY(105%);
   transition: 0.3s;
 }
@@ -2129,23 +2123,23 @@ input.input-text, textarea.input-text {
   overflow: hidden;
 }
 
-.pg-active.animation-state-0 .top-services-slide-down {
+.intoAnimation.animation-state-0 .top-services-slide-down {
   transform: translateY(0);
   transition: 1s 0.5s;
 }
 
-.pg-active.animation-state-1 .top-services-slide-down,
-.pg-active.animation-state-2 .top-services-slide-down {
+.intoAnimation.animation-state-1 .top-services-slide-down,
+.intoAnimation.animation-state-2 .top-services-slide-down {
   transform: translateY(105%);
   transition: 0.3s;
 }
 
-.pg-active.animation-state-1 .row1 img {
+.intoAnimation.animation-state-1 .row1 img {
   transform: scale(1);
   transition: 1s;
 }
 
-.pg-active.animation-state-2 .row2 img {
+.intoAnimation.animation-state-2 .row2 img {
   transform: scale(1);
   transition: 1s;
 }
@@ -2182,12 +2176,12 @@ input.input-text, textarea.input-text {
   transition: 0.3s;
 }
 
-.pg-active.animation-state-1 .row1 .services-section__item-bottom-text-animation {
+.intoAnimation.animation-state-1 .row1 .services-section__item-bottom-text-animation {
   transform: translateY(0);
   transition: 1s 0.5s;
 }
 
-.pg-active.animation-state-2 .row2 .services-section__item-bottom-text-animation {
+.intoAnimation.animation-state-2 .row2 .services-section__item-bottom-text-animation {
   transform: translateY(0);
   transition: 1s 0.5s;
 }
@@ -2203,26 +2197,26 @@ input.input-text, textarea.input-text {
   transition: 0.3s;
 }
 
-.pg-active.animation-state-1 .row1 .services-section__item-bottom-button-animation {
+.intoAnimation.animation-state-1 .row1 .services-section__item-bottom-button-animation {
   transform: translateY(0);
   transition: 1s 0.5s;
 }
 
-.pg-active.animation-state-2 .row2 .services-section__item-bottom-button-animation {
+.intoAnimation.animation-state-2 .row2 .services-section__item-bottom-button-animation {
   transform: translateY(0);
   transition: 1s 0.5s;
 }
 
-.pg-active .prices-design__img-animation {
+.intoAnimation .prices-design__img-animation {
   height: 34.8rem;
   transition: 1s;
 }
-.pg-active .prices-design__img-animation img {
+.intoAnimation .prices-design__img-animation img {
   transform: scale(1);
   transition: 1s;
 }
 
-.pg-active .prices-design__field {
+.intoAnimation .prices-design__field {
   transform: translateX(0);
   transition: 1s 0.5s;
 }
@@ -2310,17 +2304,17 @@ input.input-text, textarea.input-text {
   transition: 0.3s;
 }
 
-.pg-active .price-supervision__gray-line {
+.intoAnimation .price-supervision__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active .price-supervision__img-animation {
+.intoAnimation .price-supervision__img-animation {
   height: 70rem;
   transition: 1s;
 }
 
-.pg-active .price-supervision__img-animation img {
+.intoAnimation .price-supervision__img-animation img {
   transform: scale(1);
   transition: 1s;
 }
@@ -2393,7 +2387,7 @@ input.input-text, textarea.input-text {
   height: 2.4rem;
 }
 
-.pg-active .price-assembly__gray-line {
+.intoAnimation .price-assembly__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
@@ -2405,7 +2399,7 @@ input.input-text, textarea.input-text {
   padding-left: 31rem;
 }
 
-.pg-active.animation-state-0 .projects-top.project-page {
+.intoAnimation.animation-state-0 .projects-top.project-page {
   height: 43.6rem;
 }
 
@@ -2479,12 +2473,12 @@ input.input-text, textarea.input-text {
   left: 9.6rem;
 }
 
-.pg-active .project__gray-line {
+.intoAnimation .project__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active .project__bg img {
+.intoAnimation .project__bg img {
   height: 100vh;
   transition: 1s;
 }
@@ -2609,17 +2603,17 @@ input.input-text, textarea.input-text {
   object-position: center;
 }
 
-.pg-active .project-details__middle-animation {
+.intoAnimation .project-details__middle-animation {
   height: 50rem;
   transition: 1s 0.5s;
 }
 
-.pg-active .project-details__left-img-animation {
+.intoAnimation .project-details__left-img-animation {
   height: 30.5rem;
   transition: 1s 0.5s;
 }
 
-.pg-active .project-details__gray-line {
+.intoAnimation .project-details__gray-line {
   width: 100%;
   transition: 1s 0.5s;
 }
@@ -2693,14 +2687,14 @@ input.input-text, textarea.input-text {
   justify-content: center;
 }
 
-.pg-active .project-description__top-item {
+.intoAnimation .project-description__top-item {
   height: 9.5rem;
   padding-top: 2.3rem;
   padding-bottom: 2.3rem;
   transition: 1s 0.5s;
 }
 
-.pg-active .project-description__gray-line {
+.intoAnimation .project-description__gray-line {
   width: 100%;
   transition: 2s;
 }
@@ -2776,7 +2770,7 @@ input.input-text, textarea.input-text {
   object-fit: contain;
 }
 
-.pg-active .project-gallery__img-animation {
+.intoAnimation .project-gallery__img-animation {
   height: 100%;
   transition: 2s 0.5s;
 }
@@ -2878,12 +2872,12 @@ input.input-text, textarea.input-text {
   transition: 0.3s;
 }
 
-.pg-active .about-section__bg-animation {
+.intoAnimation .about-section__bg-animation {
   height: 100vh;
   transition: 1s;
 }
 
-.pg-active .about-section__gray-line {
+.intoAnimation .about-section__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
@@ -2971,17 +2965,17 @@ input.input-text, textarea.input-text {
   height: 68rem;
 }
 
-.pg-active .about-advantages__img-animation {
+.intoAnimation .about-advantages__img-animation {
   height: 68rem;
   transition: 1s 2s;
 }
 
-.pg-active .about-advantages__gray-line {
+.intoAnimation .about-advantages__gray-line {
   width: 100%;
   transition: 1s 1.5s;
 }
 
-.pg-active .about-advantages__item-animation {
+.intoAnimation .about-advantages__item-animation {
   height: 7.8rem;
   transition: 1s 0.5s;
 }
@@ -3051,85 +3045,85 @@ input.input-text, textarea.input-text {
   object-position: bottom right;
 }
 
-.pg-active.animation-state-0 .contacts-page__bg-animation {
+.intoAnimation.animation-state-0 .contacts-page__bg-animation {
   height: 64.9rem;
   transition: 1s;
 }
 
-.pg-active.animation-state-0 .contacts-page__bg {
+.intoAnimation.animation-state-0 .contacts-page__bg {
   height: 64.9rem;
   transition: 1s;
 }
-.pg-active.animation-state-0 .contacts-page__bg img {
+.intoAnimation.animation-state-0 .contacts-page__bg img {
   height: 64.9rem;
   transition: 1s;
 }
 
-.pg-active .contacts-page__content-item-animation {
+.intoAnimation .contacts-page__content-item-animation {
   transform: translateY(0);
   transition: 1s 1s;
 }
 
-.pg-active.animation-state-1 .contacts-page__bg-animation {
+.intoAnimation.animation-state-1 .contacts-page__bg-animation {
   height: calc(100vh - 55rem);
   transition: 1s;
 }
 
-.pg-active.animation-state-1 .contacts-page__bg {
+.intoAnimation.animation-state-1 .contacts-page__bg {
   height: calc(100vh - 55rem);
   transition: 1s;
 }
-.pg-active.animation-state-1 .contacts-page__bg img {
+.intoAnimation.animation-state-1 .contacts-page__bg img {
   height: calc(100vh - 55rem);
   transition: 1s;
 }
 
-.pg-active.animation-state-1 .about-section__gray-line {
+.intoAnimation.animation-state-1 .about-section__gray-line {
   width: 0;
   transition: 1s;
 }
 
-.contacts.pg-active.animation-state-1 .contacts-page__top .animation-slide-down {
+.contacts.intoAnimation.animation-state-1 .contacts-page__top .animation-slide-down {
   transform: translateY(-105%);
   transition: 1s 0s !important;
 }
 
-.contacts.pg-active.animation-state-1 .contacts-page__top .animation-slide-up {
+.contacts.intoAnimation.animation-state-1 .contacts-page__top .animation-slide-up {
   transform: translateY(105%);
   transition: 1s 0s !important;
 }
 
-.contacts.pg-active.animation-state-1 .contacts-page__top .animation-button-height {
+.contacts.intoAnimation.animation-state-1 .contacts-page__top .animation-button-height {
   height: 0;
   transition: 1s 0s !important;
 }
 
-.contacts.pg-active.animation-state-1 .contacts-page__top .main-view__button-text {
+.contacts.intoAnimation.animation-state-1 .contacts-page__top .main-view__button-text {
   height: 0;
   transition: 1s 0s !important;
 }
 
-.contacts.pg-active.animation-state-1 .contacts-page__top .main-view__arrow {
+.contacts.intoAnimation.animation-state-1 .contacts-page__top .main-view__arrow {
   height: 0;
   transition: 1s 0s !important;
 }
 
-.contacts.pg-active.animation-state-0 .footer__gray-line {
+.contacts.intoAnimation.animation-state-0 .footer__gray-line {
   width: 0;
   transition: 0.3s;
 }
 
-.contacts.pg-active.animation-state-1 .footer__gray-line {
+.contacts.intoAnimation.animation-state-1 .footer__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.contacts.pg-active.animation-state-0 .footer .animation-slide-up {
+.contacts.intoAnimation.animation-state-0 .footer .animation-slide-up {
   transform: translateY(105%);
   transition: 0.3s 0s !important;
 }
 
-.contacts.pg-active.animation-state-1 .footer .animation-slide-up {
+.contacts.intoAnimation.animation-state-1 .footer .animation-slide-up {
   transform: translateY(0);
   transition: 1s 1.5s !important;
 }
@@ -3230,12 +3224,12 @@ input.input-text, textarea.input-text {
   object-position: center;
 }
 
-.pg-active .design-main__gray-line {
+.intoAnimation .design-main__gray-line {
   width: 100vw;
   transition: 1s 1s;
 }
 
-.pg-active .design-main__bg-animation {
+.intoAnimation .design-main__bg-animation {
   height: 100vh;
   transition: 1s;
 }
@@ -3306,7 +3300,7 @@ input.input-text, textarea.input-text {
   letter-spacing: 0.04em;
 }
 
-.pg-active .design-steps__img-animation {
+.intoAnimation .design-steps__img-animation {
   height: 65rem;
   transition: 1s 1s;
 }
@@ -3386,12 +3380,12 @@ input.input-text, textarea.input-text {
   object-position: center;
 }
 
-.pg-active .design-components__gray-line {
+.intoAnimation .design-components__gray-line {
   width: 100%;
   transition: 2s 1s;
 }
 
-.pg-active .design-components__img-animation {
+.intoAnimation .design-components__img-animation {
   height: 70rem;
   transition: 1s;
 }
@@ -3423,7 +3417,7 @@ input.input-text, textarea.input-text {
   transition: 0.3s;
 }
 
-.pg-active .interiors__gray-line {
+.intoAnimation .interiors__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
@@ -3506,7 +3500,7 @@ input.input-text, textarea.input-text {
     height: 100%;
   }
 }
-.pg-active .interiors-swiper-slide__img-animation {
+.intoAnimation .interiors-swiper-slide__img-animation {
   height: 52rem;
   transition: 1s;
 }
@@ -3565,12 +3559,12 @@ input.input-text, textarea.input-text {
   height: 54rem;
 }
 
-.pg-active .faq__right-animation {
+.intoAnimation .faq__right-animation {
   width: 84.2rem;
   transition: 1s 1s;
 }
 
-.pg-active .faq__img-animation {
+.intoAnimation .faq__img-animation {
   height: 54rem;
   transition: 1s;
 }
@@ -3717,12 +3711,12 @@ input.input-text, textarea.input-text {
   bottom: 14.1rem;
 }
 
-.pg-active .complectation__gray-line {
+.intoAnimation .complectation__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active .complectation__bg-animation {
+.intoAnimation .complectation__bg-animation {
   height: 100%;
   transition: 1s;
 }
@@ -3941,12 +3935,12 @@ input.input-text, textarea.input-text {
   bottom: 14.1rem;
 }
 
-.pg-active .architecture-main__bg-animation {
+.intoAnimation .architecture-main__bg-animation {
   height: 100%;
   transition: 1s;
 }
 
-.pg-active .architecture-main__gray-line {
+.intoAnimation .architecture-main__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
@@ -4032,17 +4026,17 @@ input.input-text, textarea.input-text {
   object-position: center;
 }
 
-.pg-active .project-support__gray-line {
+.intoAnimation .project-support__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active .vision-main__gray-line {
+.intoAnimation .vision-main__gray-line {
   width: 100%;
   transition: 1s 1s;
 }
 
-.pg-active .project-support__gray-line-vertical {
+.intoAnimation .project-support__gray-line-vertical {
   height: 39rem;
   transition: 1s 1.5s;
 }

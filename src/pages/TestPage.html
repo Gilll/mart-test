@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MART</title>
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/set.css">
+    <link rel="stylesheet" href="../assets/css/swiper.css">
+    <link rel="stylesheet" href="../assets/js/fullPage.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/pageable.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <style>
+        body {
+            color: black;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-family: arial, helvetica;
+            color: #fff;
+            width: 100vw;
+            height: 100vh;
+            font-size: 6em;
+            font-size: calc(2em + 2vw);
+            font-family: arial, helvetica;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .test-swiper {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .swiper-slide:nth-child(1) {
+            background-image: linear-gradient(128deg, #40afff, #3f61ff);
+        }
+
+        .swiper-slide:nth-child(2) {
+            background-image: linear-gradient(128deg, #ff9a3f, #ff4b40);
+        }
+
+        .swiper-slide:nth-child(3) {
+            background-image: linear-gradient(128deg, #fc40ff, #543fff);
+        }
+    </style>
+</head>
+<body>
+<div id="fullpage">
+    <div class="swiper test-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">slide 1</div>
+            <div class="swiper-slide">slide 2</div>
+            <div class="swiper-slide">slide 3</div>
+            <div class="swiper-slide">slide 4</div>
+            <div class="swiper-slide">slide 5</div>
+            <div class="swiper-slide">slide 6</div>
+            <div class="swiper-slide">slide 7</div>
+            <div class="swiper-slide">slide 8</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
