@@ -15,7 +15,7 @@ $(document).ready(function() {
         duration: 1000,
         distance: '100%',
         viewOffset: {
-            top: 100,
+            top: 200,
             right: 0,
             bottom: 100,
             left: 0,
@@ -26,7 +26,7 @@ $(document).ready(function() {
         duration: 1000,
         distance: '-100%',
         viewOffset: {
-            top: 100,
+            top: 200,
             right: 0,
             bottom: 100,
             left: 0,
@@ -122,7 +122,7 @@ $(document).ready(function() {
         duration: 1000,
         opacity: 1,
         viewOffset: {
-            top: 100,
+            top: 200,
             right: 0,
             bottom: 100,
             left: 0,
@@ -218,6 +218,35 @@ $(document).ready(function() {
             bottom: 100,
             left: 0,
         }
+    });
+    ScrollReveal().reveal('.white-header', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+        },
+        beforeReset: function (el) {
+            $(".header").removeClass("white")
+        },
+    });
+    ScrollReveal().reveal('.black-header', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+        },
+        beforeReset: function (el) {
+            console.log("tt")
+            $(".header").addClass("white")
+        },
     });
     //ScrollReveal().reveal('.tagline', { delay: 500 });
 

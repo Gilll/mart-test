@@ -45,10 +45,12 @@
         align-items: center;
     }
     .header {
-        background: rgba(0, 0, 0, 0.5);
         margin: 0;
         padding-top: 1.6rem;
         padding-bottom: 1.6rem;
+    }
+    .vh-100 {
+        height: 100vh;
     }
     .header path {
         fill: #140E0A;

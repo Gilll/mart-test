@@ -232,7 +232,6 @@ section.main-view {
     background-color: #FFFEF8;
     overflow: hidden;
     z-index: 99;
-    height: 0;
     transition: 0.3s;
 }
 .projects-top__menu {

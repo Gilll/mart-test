@@ -15,7 +15,7 @@ $(document).ready(function() {
         duration: 1000,
         distance: '100%',
         viewOffset: {
-            top: 100,
+            top: 200,
             right: 0,
             bottom: 100,
             left: 0,
