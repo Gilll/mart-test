@@ -53,10 +53,14 @@ $vh: calc(100vh/700);
   .header__container {
     width: 36.1rem;
     justify-content: space-between;
+    align-items: center;
   }
 
   .header {
-    margin-top: 1.6rem;
+    background: rgba(0,0,0,0.5);
+    margin: 0;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
     path {
       fill: $primary-dark-color;
     }
@@ -298,12 +302,19 @@ $vh: calc(100vh/700);
   .gray-line {
     width: 1px;
     height: 0.1rem;
-    background-color: rgba(255, 254, 248, 0.3);
+    background-color: rgba(255, 254, 248, 0.4);
     transition: 0.2s 0s linear;
+    &.dark {
+      background-color: rgba(20, 14, 10, 0.16);
+    }
   }
 
   .mb-8 {
     margin-bottom: 8rem;
+  }
+
+  section.specialists {
+    min-height: auto;
   }
 
   .supervisors__top {
@@ -318,12 +329,9 @@ $vh: calc(100vh/700);
     line-height: 1.1;
   }
 
-  .supervisors {
-    height: 97.6rem;
-  }
-
-  .intoAnimation .mid-size .animation-button-height {
+  .mid-size .animation-button-height.show {
     height: 19rem;
+    transition: 1s 1s;
   }
 
   .mid-size .round-button {
@@ -362,7 +370,6 @@ $vh: calc(100vh/700);
     position: relative;
     overflow: hidden;
     margin-bottom: 2.4rem;
-    height: 0;
     transition: 1s;
   }
   .supervisors__type {
@@ -377,14 +384,19 @@ $vh: calc(100vh/700);
       display: none;
     }
   }
+  .supervisors__content-main--imgs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+  }
   .supervisors__content-main {
     display: block;
     height: unset;
   }
   .supervisors__content-first {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 11rem;
     margin-right: 0;
   }
@@ -392,9 +404,6 @@ $vh: calc(100vh/700);
     height: 25rem;
   }
   .supervisors__content-second {
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 23.5rem;
     margin-right: 0;
   }
@@ -406,12 +415,11 @@ $vh: calc(100vh/700);
   }
   .supervisors__content-text {
     width: 36.1rem;
-    padding-top: 27.4rem;
+
     font-size: 1.4rem;
     .text {
       position: relative;
       overflow: hidden;
-      height: 0;
       transition: 1s;
     }
   }
@@ -566,7 +574,6 @@ $vh: calc(100vh/700);
   }
   .services-list {
     margin-top: 2.1rem;
-    height: 38.5rem;
     position: relative;
     overflow: hidden;
     flex-wrap: wrap;
@@ -575,7 +582,8 @@ $vh: calc(100vh/700);
     height: 38.5rem;
     width: 17.2rem;
     position: relative;
-    transform: translateY(0);
+  }
+  .mb-4 {
     margin-bottom: 4rem;
   }
   .services__container {
@@ -608,14 +616,6 @@ $vh: calc(100vh/700);
     transition: 1s 1.2s;
   }
 
-  .intoAnimation .services-list__item {
-    transform: translateY(0);
-    transition: 1s;
-  }
-  .intoAnimation .services-list__item {
-    transform: translateY(-42.5rem);
-    transition: 1s;
-  }
   .services-desc__container {
     width: 100%;
     padding: 0;
@@ -646,16 +646,18 @@ $vh: calc(100vh/700);
   }
   .services-desc__content {
     display: block;
-    height: 50rem;
     position: relative;
     overflow: hidden;
+  }
+  .pb-8 {
+    padding-bottom: 8rem;
   }
   .services-desc__col {
     display: block;
     width: 100%;
     position: relative;
     overflow: hidden;
-    height: 50rem;
+    height: auto;
     transition: 1s;
   }
   .services-desc__img-wrapper {
@@ -678,18 +680,6 @@ $vh: calc(100vh/700);
   .services-desc__text-spicer {
     height: 2rem;
   }
-  .intoAnimation .services-desc__top {
-    height: 16.7rem;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__top {
-    height: 10.6rem;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__top {
-    height: 10.6rem;
-    transition: 1s;
-  }
   .services-desc__col:first-child .services-desc__img-wrapper {
     position: relative;
     overflow: hidden;
@@ -698,48 +688,10 @@ $vh: calc(100vh/700);
     height: 36.2rem;
     transition: 1s;
   }
-  .intoAnimation .services-desc__col:first-child .services-desc__img-wrapper {
-    height: 0;
-    margin-bottom: 0;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__col:first-child .services-desc__img-wrapper {
-    height: 0;
-    margin-bottom: 0;
-    transition: 1s;
-  }
   .services-desc__col:first-child {
     margin-bottom: 4rem;
   }
-  .intoAnimation .services-desc__col:first-child {
-    height: 50rem;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__col:first-child {
-    height: 20.5rem;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__col:first-child {
-    height: 0;
-    margin-bottom: 0;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__content {
-    height: 50rem;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__content {
-    height: 60rem;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__content {
-    height: 60rem;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__col:last-child {
-    height: 60rem;
-    transition: 1s;
-  }
+
   .services-desc__text-wrapper.sliced {
     width: 16rem;
   }
@@ -747,24 +699,20 @@ $vh: calc(100vh/700);
     width: 19rem;
     height: 19rem;
     right: -1rem;
-    bottom: -6rem;
+    bottom: -8rem;
   }
   .services-desc__gray-line {
     bottom: 3rem;
-    width: 0;
+    width: 100%;
     transition: 1s;
   }
   .intoAnimation .services-desc__gray-line {
     width: 100%;
     transition: 1s 1s;
   }
-  .intoAnimation .services-desc__gray-line {
-    width: 0;
-    transition: 1s;
-  }
-  .intoAnimation .services-desc__gray-line {
-    width: 0;
-    transition: 1s;
+  .gray-line.show {
+    width: 100%;
+    transition: 1s 1s;
   }
   .specialists__content {
     width: 100%;
@@ -837,8 +785,9 @@ $vh: calc(100vh/700);
   }
   .premium__top-container {
     width: 36.1rem;
-    padding: 8rem 0 4rem;
+    padding: 0 0 9rem;
     display: block;
+    position: relative;
   }
   .premium__top-left {
     width: 100%;
@@ -847,6 +796,9 @@ $vh: calc(100vh/700);
       left: 1.6rem;
       bottom: 5rem;
     }
+  }
+  .premium__video {
+    height: 100vh;
   }
   .premium__title {
     font-size: 3.2rem;
@@ -860,9 +812,6 @@ $vh: calc(100vh/700);
   .premium__top-text {
     margin-top: 0;
     margin-bottom: 1.6rem;
-  }
-  .intoAnimation .premium__top {
-    height: 52rem;
   }
   .premium__button {
     right: unset;

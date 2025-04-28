@@ -290,12 +290,7 @@ $vh: calc(100vh/900);
   transition: 1s 1s;
 }
 
-.intoAnimation .projects-swiper-slide__text-animation {
-  height: 2rem;
-  transition: 1s 2.3s;
-}
-
-.intoAnimation .projects-swiper-slide__text-animation {
+.show.projects-swiper-slide__text-animation {
   height: 2rem;
   transition: 1s 1.3s;
 }

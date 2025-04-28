@@ -100,6 +100,23 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
+    ScrollReveal().reveal('.projects-swiper-slide__text-animation', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 200,
+            right: 0,
+            bottom: 0,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
     ScrollReveal().reveal('.primary-button__circle-anchor', {
         reset: true,
         duration: 1000,
@@ -117,7 +134,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.gray-line', {
+    ScrollReveal().reveal('.main-view__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -134,11 +151,67 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.projects-swiper-slide__wrapper', {
+    ScrollReveal().reveal('.projects__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 170,
+            right: 0,
+            bottom: 0,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.services-desc__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 270,
+            right: 0,
+            bottom: 100,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.projects-swiper-slide__wrapper-a', {
         reset: true,
         duration: 1000,
         distance: '100%',
         scale: 1.2,
+        viewOffset: {
+            top: 100,
+            right: 0,
+            bottom: 100,
+            left: 0,
+        }
+    });
+    ScrollReveal().reveal('.scale-into-view', {
+        reset: true,
+        duration: 1000,
+        scale: 1.2,
+        viewOffset: {
+            top: 100,
+            right: 0,
+            bottom: 100,
+            left: 0,
+        }
+    });
+    ScrollReveal().reveal('.services-list__item', {
+        reset: true,
+        duration: 1000,
+        scale: 0,
         viewOffset: {
             top: 100,
             right: 0,
