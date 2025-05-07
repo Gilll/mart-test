@@ -240,15 +240,13 @@ $vh: calc(100vh/900);
 }
 
 .intoAnimation .projects .projects-swiper-slide__wrapper img {
-  height: calc(100vh - 40rem);
-  transform: scale(1.2);
+  height: 100vh;
+  transform: scale(1.4);
   transition: 1s;
 }
-
-.intoAnimation .projects .projects-swiper-slide__wrapper img {
-  height: 100vh;
+.fullscreen.projects .projects-swiper-slide__wrapper img {
   transform: scale(1);
-  transition: 1s;
+  transition: 1s 0.5s;
 }
 
 .swiper-slide.projects-swiper-slide {
@@ -259,21 +257,13 @@ $vh: calc(100vh/900);
   animation: swiper-clip 0.8s ease-in-out forwards;
 }
 
-.intoAnimation .projects__gray-line {
+.intoAnimation .fullscreen .projects__gray-line .gray-line {
   width: 100%;
-  bottom: $vh * 257;
-  transition: width 1s 2s, bottom 1s;
+  transition: width 1s 2s;
 }
-
-.projects__gray-line .show.gray-line {
-  width: 100%;
-  bottom: $vh * 378;
-  transition: width 1s 1s, bottom 1s;
-}
-
-.projects__gray-line .show.gray-line {
-  width: 100%;
-  transition: width 1s 1s, bottom 1s;
+.intoAnimation  .projects__gray-line .gray-line {
+  width: 1px;
+  transition: 0.3s;
 }
 
 .intoAnimation .projects-swiper-slide__content {
@@ -285,12 +275,12 @@ $vh: calc(100vh/900);
   transition: 1s;
 }
 
-.show.projects-swiper-slide__title-animation {
+.fullscreen .show.projects-swiper-slide__title-animation {
   height: 7.2rem;
   transition: 1s 1s;
 }
 
-.show.projects-swiper-slide__text-animation {
+.fullscreen .show.projects-swiper-slide__text-animation {
   height: 2rem;
   transition: 1s 1.3s;
 }

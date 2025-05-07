@@ -10,14 +10,48 @@ $(document).ready(function() {
         })
     }
 
+    let header = $(".header"),
+        headerTimeout,
+        whiteHeaderOffsets = []
+
+    $(".white-header").each(function () {
+        whiteHeaderOffsets.push([$(this).offset().top, $(this).outerHeight()])
+    })
+
+    $(document).on("scroll", function (e) {
+        header.addClass("hidden-header")
+        clearTimeout(headerTimeout)
+        headerTimeout = setTimeout(function () {
+            let offset = $(document).scrollTop()
+            header.removeClass("white")
+            for (let i = 0; i < whiteHeaderOffsets.length; i++) {
+                if (offset >= whiteHeaderOffsets[i][0] && offset < (whiteHeaderOffsets[i][0] + whiteHeaderOffsets[i][1] - 30)) {
+                    header.addClass("white")
+                }
+            }
+            header.removeClass("hidden-header")
+        }, 500)
+    })
+
     ScrollReveal().reveal('.slide-up-in-view', {
         reset: true,
         duration: 1000,
         distance: '100%',
         viewOffset: {
-            top: 200,
+            top: 110,
             right: 0,
-            bottom: 100,
+            bottom: 60,
+            left: 0,
+        }
+    });
+    ScrollReveal().reveal('.slide-up-in-view0', {
+        reset: true,
+        duration: 1000,
+        distance: '100%',
+        viewOffset: {
+            top: 110,
+            right: 0,
+            bottom: 0,
             left: 0,
         }
     });
@@ -26,9 +60,21 @@ $(document).ready(function() {
         duration: 1000,
         distance: '-100%',
         viewOffset: {
-            top: 200,
+            top: 110,
             right: 0,
-            bottom: 100,
+            bottom: 60,
+            left: 0,
+        }
+    });
+    ScrollReveal().reveal('.slide-left-in-view', {
+        reset: true,
+        duration: 1000,
+        distance: '-100%',
+        origin: 'left',
+        viewOffset: {
+            top: 110,
+            right: 0,
+            bottom: 60,
             left: 0,
         }
     });
@@ -134,6 +180,40 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
+    ScrollReveal().reveal('.design-main__button-anchor', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 200,
+            right: 0,
+            bottom: 100,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.architecture-main__button-anchor', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 200,
+            right: 0,
+            bottom: 100,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
     ScrollReveal().reveal('.main-view__gray-line .gray-line', {
         reset: true,
         duration: 1000,
@@ -159,6 +239,57 @@ $(document).ready(function() {
             top: 170,
             right: 0,
             bottom: 0,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.about-advantages__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 90,
+            right: 0,
+            bottom: 50,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.faq-list__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 90,
+            right: 0,
+            bottom: 50,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.about-advantages__item-wrapper', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 90,
+            right: 0,
+            bottom: 50,
             left: 0,
         },
         beforeReveal: function (el) {
@@ -208,6 +339,22 @@ $(document).ready(function() {
             left: 0,
         }
     });
+    ScrollReveal().reveal('.piter__title', {
+        reset: true,
+        duration: 1000,
+        viewOffset: {
+            top: 250,
+            right: 0,
+            bottom: 150,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
     ScrollReveal().reveal('.services-list__item', {
         reset: true,
         duration: 1000,
@@ -219,38 +366,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.white-header', {
-        reset: true,
-        duration: 1000,
-        opacity: 1,
-        viewOffset: {
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-        },
-        beforeReset: function (el) {
-            $(".header").removeClass("white")
-        },
-    });
-    ScrollReveal().reveal('.black-header', {
-        reset: true,
-        duration: 1000,
-        opacity: 1,
-        viewOffset: {
-            top: 0,
-            right: 0,
-            bottom: 0,
-            left: 0,
-        },
-        beforeReset: function (el) {
-            console.log("tt")
-            $(".header").addClass("white")
-        },
-    });
     //ScrollReveal().reveal('.tagline', { delay: 500 });
-
-
 
     if ($(".projects-swiper")) {
         const swiper = new Swiper('.projects-swiper', {
@@ -371,6 +487,10 @@ $(document).ready(function() {
             }
         });
     }
+    $(".projects__button-anchor .round-button").click(function () {
+        $(".projects").addClass("fullscreen")
+        $('html, body').animate({ scrollTop: $(".projects-swiper-box").offset().top }, 1000)
+    })
 
     if ($(".test-swiper")) {
         new Swiper('.test-swiper', {
@@ -380,6 +500,20 @@ $(document).ready(function() {
             speed: 1000,
         });
     }
+
+    $(".services-section__item").click(function () {
+        let that = $(this),
+            topOffset = that.offset().top - $(document).scrollTop(),
+            leftOffset = that.offset().left
+        that.css("top",  topOffset + "px")
+        that.css("left",  leftOffset + "px")
+        that.parent().addClass("isSelected")
+        header.addClass("white")
+        that.animate({
+            top: 0,
+            left: 0
+        }, 0, "linear")
+    })
 
     setTimeout(function () {
         $("body").removeClass("isLoading").addClass("intoAnimation")

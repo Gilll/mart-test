@@ -6,9 +6,9 @@
     <title>MART</title>
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/set.css">
-    <link rel="stylesheet" href="../assets/scss/style2.css">
-    <link rel="stylesheet" href="../assets/scss/animations1.css">
-    <link rel="stylesheet" href="../assets/scss/mobile2.css">
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <link rel="stylesheet" href="../assets/scss/animations.css">
+    <link rel="stylesheet" href="../assets/scss/mobile.css">
     <link rel="stylesheet" href="../assets/css/swiper.css">
 </head>
 <body class="isLoading">
@@ -118,6 +118,22 @@
          </div>
          <div animation-steps="2" animation-mob-steps="2" animation-step="0" white-header-steps="1" data-anchor="projects" class="mb-8 projects-section">
              <section class="projects">
+                 <div class="projects__button-anchor">
+                     <div class="main-view__button-text-wrapper">
+                         <div class="main-view__button-text">смотреть<br>проекты</div>
+                     </div>
+                     <div class="main-view__arrow-wrapper">
+                         <div class="main-view__arrow">
+                             <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                 <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                             </svg>
+                         </div>
+                     </div>
+                     <div class="animation-button-height animation-height">
+                         <div class="round-button"></div>
+                     </div>
+                 </div>
                  <div class="projects-top black-header">
                      <div class="projects-top__content">
                          <div class="animation-slide-down__container">
@@ -290,7 +306,7 @@
                             </div>
                         </div>
                         <div class="supervisors__content-main">
-                            <div class="supervisors__content-main--imgs">
+                            <div class="supervisors__content-main--imgs white-header">
                                 <div class="supervisors__content-first">
                                     <img class="scale-into-view" src="../assets/images/sup1.png" alt="">
                                 </div>
@@ -772,7 +788,7 @@
                                         </div>
                                         <div class="steps-list__img-wrapper">
                                             <div class="steps-list__img-animation">
-                                                <img src="../assets/images/steps1.png" alt="">
+                                                <img class="scale-into-view" src="../assets/images/steps1.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -834,7 +850,7 @@
                                         </div>
                                         <div class="steps-list__img-wrapper">
                                             <div class="steps-list__img-animation">
-                                                <img src="../assets/images/steps2.png" alt="">
+                                                <img class="scale-into-view" src="../assets/images/steps2.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -916,7 +932,7 @@
                                      <div class="round-button"></div>
                                  </div>
                              </div>
-                            <div class="piter__title">
+                            <div class="piter__title add-show">
                                 <div class="piter__title-animation">
                                     <div class="piter__title-animation-wrap">
                                         Наша студия находится<br>
@@ -937,26 +953,27 @@
                                     </div>
                                     <div class="piter__left-img">
                                         <div class="piter__left-img-animation">
-                                            <img src="../assets/images/piter1.png" alt="">
+                                            <img class="scale-into-view" src="../assets/images/piter1.png" alt="">
+                                            <div class="piter__right-text">
+                                                <div class="slide-up-in-view__container">
+                                                    <div class="slide-up-in-view duration-1">
+                                                        Современная мебель, хай-тек технологии, гипсовая лепнина - это ДНК нашего стиля. Благодаря врожденному чувству прекрасного, насмотренности, опыту
+                                                        и намеренному избеганию быстротечных трендов наши интерьеры не устаревают
+                                                        и производят неизгладимый wow-эффект
+                                                        с первого взгляда.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                  <div class="piter__middle">
                                      <div class="piter__middle-animation">
-                                         <img src="../assets/images/piter2.png" alt="">
+                                         <img class="scale-into-view" src="../assets/images/piter2.png" alt="">
                                      </div>
                                  </div>
                                  <div class="piter__right">
-                                     <div class="piter__right-text">
-                                         <div class="slide-up-in-view__container">
-                                             <div class="slide-up-in-view duration-1">
-                                                 Современная мебель, хай-тек технологии, гипсовая лепнина - это ДНК нашего стиля. Благодаря врожденному чувству прекрасного, насмотренности, опыту
-                                                 и намеренному избеганию быстротечных трендов наши интерьеры не устаревают
-                                                 и производят неизгладимый wow-эффект
-                                                 с первого взгляда.
-                                             </div>
-                                         </div>
-                                     </div>
+
                                      <div class="piter__right-text">
                                          <div class="slide-up-in-view__container">
                                              <div class="slide-up-in-view duration-1">
@@ -1039,11 +1056,11 @@
                                              <div class="result-swiper__slide-animation">
                                                  <div class="result-swiper__slide-left">
                                                      <div class="result-swiper__text">визуализация</div>
-                                                     <div class="result-swiper__img"><img src="../assets/images/before.png" alt=""></div>
+                                                     <div class="result-swiper__img"><img class="scale-into-view" src="../assets/images/before.png" alt=""></div>
                                                  </div>
                                                  <div class="result-swiper__slide-right">
                                                      <div class="result-swiper__text">реализация</div>
-                                                     <div class="result-swiper__img"><img src="../assets/images/after.png" alt=""></div>
+                                                     <div class="result-swiper__img"><img class="scale-into-view" src="../assets/images/after.png" alt=""></div>
                                                  </div>
                                              </div>
                                          </div>
@@ -1174,7 +1191,7 @@
                             </div>
                              <div class="feedback__img">
                                  <div class="feedback__img-animation">
-                                     <img src="../assets/images/feedback.png" alt="">
+                                     <img class="scale-into-view" src="../assets/images/feedback.png" alt="">
                                  </div>
                              </div>
                              <div class="feedback__info">
@@ -1189,37 +1206,37 @@
                                  <div class="feedback__info-list">
                                      <div class="animation-slide-right__container">
                                          <div class="animation-slide-right duration-11">
-                                            <div class="feedback__info-item">Свободное время для себя</div>
+                                            <div class="feedback__info-item slide-left-in-view">Свободное время для себя</div>
                                          </div>
                                      </div>
                                      <div class="animation-slide-right__container">
                                          <div class="animation-slide-right duration-12">
-                                            <div class="feedback__info-item">Спокойствие и уверенность</div>
+                                            <div class="feedback__info-item slide-left-in-view">Спокойствие и уверенность</div>
                                          </div>
                                      </div>
                                      <div class="animation-slide-right__container">
                                          <div class="animation-slide-right duration-13">
-                                            <div class="feedback__info-item">Полное технические  сопровождение</div>
+                                            <div class="feedback__info-item slide-left-in-view">Полное технические  сопровождение</div>
                                          </div>
                                      </div>
                                      <div class="animation-slide-right__container">
                                          <div class="animation-slide-right duration-14">
-                                          <div class="feedback__info-item">Эксклюзивный авторский интерьер</div>
+                                          <div class="feedback__info-item slide-left-in-view">Эксклюзивный авторский интерьер</div>
                                          </div>
                                      </div>
                                      <div class="animation-slide-right__container">
                                          <div class="animation-slide-right duration-1">
-                                             <div class="feedback__info-item">Грамотно вложенный бюджет</div>
+                                             <div class="feedback__info-item slide-left-in-view">Грамотно вложенный бюджет</div>
                                          </div>
                                      </div>
                                      <div class="animation-slide-right__container">
                                          <div class="animation-slide-right duration-1">
-                                             <div class="feedback__info-item">Конфиденциальность</div>
+                                             <div class="feedback__info-item slide-left-in-view">Конфиденциальность</div>
                                          </div>
                                      </div>
                                      <div class="animation-slide-right__container">
                                          <div class="animation-slide-right duration-1">
-                                            <div class="feedback__info-item">Прозрачность, официальность</div>
+                                            <div class="feedback__info-item slide-left-in-view">Прозрачность, официальность</div>
                                          </div>
                                      </div>
                                  </div>
@@ -1231,14 +1248,14 @@
                          <div class="footer__container">
                              <div class="footer__left">
                                  <div class="slide-up-in-view__container">
-                                     <div class="slide-up-in-view duration-1">
+                                     <div class="slide-up-in-view0 duration-1">
                                          <a href="#">Политика конфиденциальности</a>
                                      </div>
                                  </div>
                              </div>
                              <div class="footer__middle">
                                  <div class="slide-up-in-view__container">
-                                     <div class="slide-up-in-view duration-1">
+                                     <div class="slide-up-in-view0 duration-1">
                                          © 2014-2025
                                      </div>
                                  </div>
