@@ -3,7 +3,7 @@
  * 4 | $vh = calc(100vh/980)
  *   |     ^
  *   '
- *   src\assets\scss\style.scss 4:5  root stylesheet */
+ *   src\assets\scss\style5.scss 4:5  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
