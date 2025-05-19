@@ -15,7 +15,7 @@ $(document).ready(function() {
         whiteHeaderOffsets = []
 
     $(".white-header").each(function () {
-        whiteHeaderOffsets.push([$(this).offset().top, $(this).outerHeight()])
+        whiteHeaderOffsets.push([$(this).offset().top, $(this).outerHeight() - 70])
     })
 
     $(document).on("scroll", function (e) {
@@ -44,6 +44,28 @@ $(document).ready(function() {
             left: 0,
         }
     });
+    ScrollReveal().reveal('.slide-up-in-view100', {
+        reset: true,
+        duration: 1000,
+        distance: '100%',
+        viewOffset: {
+            top: 150,
+            right: 0,
+            bottom: 60,
+            left: 0,
+        }
+    });
+    ScrollReveal().reveal('.slide-up-in-view150', {
+        reset: true,
+        duration: 1000,
+        distance: '100%',
+        viewOffset: {
+            top: 200,
+            right: 0,
+            bottom: 60,
+            left: 0,
+        }
+    });
     ScrollReveal().reveal('.slide-up-in-view0', {
         reset: true,
         duration: 1000,
@@ -66,6 +88,28 @@ $(document).ready(function() {
             left: 0,
         }
     });
+    ScrollReveal().reveal('.slide-down-in-view150', {
+        reset: true,
+        duration: 1000,
+        distance: '-100%',
+        viewOffset: {
+            top: 180,
+            right: 0,
+            bottom: 60,
+            left: 0,
+        }
+    });
+    ScrollReveal().reveal('.slide-down-in-view100', {
+        reset: true,
+        duration: 1000,
+        distance: '-100%',
+        viewOffset: {
+            top: 150,
+            right: 0,
+            bottom: 60,
+            left: 0,
+        }
+    });
     ScrollReveal().reveal('.slide-left-in-view', {
         reset: true,
         duration: 1000,
@@ -83,7 +127,7 @@ $(document).ready(function() {
         duration: 1000,
         opacity: 1,
         viewOffset: {
-            top: 0,
+            top: 60,
             right: 0,
             bottom: 50,
             left: 0,
@@ -100,7 +144,7 @@ $(document).ready(function() {
         duration: 1000,
         opacity: 1,
         viewOffset: {
-            top: 90,
+            top: 150,
             right: 0,
             bottom: 0,
             left: 0,
@@ -117,41 +161,7 @@ $(document).ready(function() {
         duration: 1000,
         opacity: 1,
         viewOffset: {
-            top: 80,
-            right: 0,
-            bottom: 0,
-            left: 0,
-        },
-        beforeReveal: function (el) {
-            el.classList.add("show")
-        },
-        beforeReset: function (el) {
-            el.classList.remove("show")
-        },
-    });
-    ScrollReveal().reveal('.projects-swiper-slide__title-animation', {
-        reset: true,
-        duration: 1000,
-        opacity: 1,
-        viewOffset: {
-            top: 100,
-            right: 0,
-            bottom: 20,
-            left: 0,
-        },
-        beforeReveal: function (el) {
-            el.classList.add("show")
-        },
-        beforeReset: function (el) {
-            el.classList.remove("show")
-        },
-    });
-    ScrollReveal().reveal('.projects-swiper-slide__text-animation', {
-        reset: true,
-        duration: 1000,
-        opacity: 1,
-        viewOffset: {
-            top: 200,
+            top: 135,
             right: 0,
             bottom: 0,
             left: 0,
@@ -168,7 +178,7 @@ $(document).ready(function() {
         duration: 1000,
         opacity: 1,
         viewOffset: {
-            top: 200,
+            top: 110,
             right: 0,
             bottom: 100,
             left: 0,
@@ -180,23 +190,14 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.design-main__button-anchor', {
-        reset: true,
-        duration: 1000,
-        opacity: 1,
-        viewOffset: {
-            top: 200,
-            right: 0,
-            bottom: 100,
-            left: 0,
-        },
-        beforeReveal: function (el) {
-            el.classList.add("show")
-        },
-        beforeReset: function (el) {
-            el.classList.remove("show")
-        },
-    });
+    $(".mob-header-icon").click(function () {
+        $('body').addClass("body-lock")
+        $(this).parent().parent().addClass("menu-is-open")
+    })
+    $(".close-menu").click(function () {
+        $('body').removeClass("body-lock")
+        $(this).parent().parent().removeClass("menu-is-open")
+    })
     ScrollReveal().reveal('.architecture-main__button-anchor', {
         reset: true,
         duration: 1000,
@@ -231,14 +232,235 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.projects__gray-line .gray-line', {
+    ScrollReveal().reveal('.design-main__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
         viewOffset: {
             top: 170,
             right: 0,
-            bottom: 0,
+            bottom: 100,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.design-components__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.about-section__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.prices__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.prices-design__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.project__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.complectation__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.price-assembly__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.vision-main__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 70,
+            right: 0,
+            bottom: 70,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.supervisors__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 120,
+            right: 0,
+            bottom: 80,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.architecture-main__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 120,
+            right: 0,
+            bottom: 80,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.steps-list__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 60,
+            right: 0,
+            bottom: 80,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.piter__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 60,
+            right: 0,
+            bottom: 80,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.steps__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 40,
+            right: 0,
+            bottom: 80,
             left: 0,
         },
         beforeReveal: function (el) {
@@ -304,9 +526,9 @@ $(document).ready(function() {
         duration: 1000,
         opacity: 1,
         viewOffset: {
-            top: 270,
+            top: 200,
             right: 0,
-            bottom: 100,
+            bottom: 70,
             left: 0,
         },
         beforeReveal: function (el) {
@@ -343,7 +565,7 @@ $(document).ready(function() {
         reset: true,
         duration: 1000,
         viewOffset: {
-            top: 250,
+            top: 200,
             right: 0,
             bottom: 150,
             left: 0,
@@ -410,6 +632,11 @@ $(document).ready(function() {
             loop: false,
             slidesPerView: 1,
             //effect: 'creative',
+            /*autoplay: {
+                delay: 3000,
+            },*/
+            allowTouchMove: false,
+            effect: 'fade',
             creativeEffect: {},
             speed: 1000,
             navigation: {
@@ -487,10 +714,6 @@ $(document).ready(function() {
             }
         });
     }
-    $(".projects__button-anchor .round-button").click(function () {
-        $(".projects").addClass("fullscreen")
-        $('html, body').animate({ scrollTop: $(".projects-swiper-box").offset().top }, 1000)
-    })
 
     if ($(".test-swiper")) {
         new Swiper('.test-swiper', {
@@ -501,18 +724,32 @@ $(document).ready(function() {
         });
     }
 
-    $(".services-section__item").click(function () {
-        let that = $(this),
-            topOffset = that.offset().top - $(document).scrollTop(),
-            leftOffset = that.offset().left
+    let startOffset = 0;
+
+    $(".projects__button-anchor .round-button").click(function () {
+        let that = $(".projects-swiper-box--animation"),
+            topOffset = that.offset().top - $(document).scrollTop()
+
+
+        that.css("transition",  "1s")
         that.css("top",  topOffset + "px")
-        that.css("left",  leftOffset + "px")
-        that.parent().addClass("isSelected")
+        that.parent().addClass("isSelected").addClass("fixed-block")
+        setTimeout(function () {
+            that.addClass("top0")
+        }, 50)
         header.addClass("white")
-        that.animate({
-            top: 0,
-            left: 0
-        }, 0, "linear")
+        $("body").addClass("body-lock")
+    })
+
+    $(".projects .white-cross").click(function () {
+        let that = $(".projects-swiper-box--animation")
+
+        $("body").removeClass("body-lock")
+        that.removeClass("top0").parent().removeClass("isSelected")
+        setTimeout(function () {
+            that.attr("style", "").parent().removeClass("fixed-block")
+        }, 1000)
+
     })
 
     setTimeout(function () {

@@ -14,21 +14,16 @@
 <body class="isLoading">
      <header class="header white">
          <div class="header__container">
-             <nav class="header__menu">
-                 <ul>
-                     <li class="header__menu-item"><a href="#">Услуги</a></li>
-                     <li class="header__menu-item"><a href="#">цены</a></li>
-                     <li class="header__menu-item"><a href="#">Проекты</a></li>
-                     <li class="header__menu-item"><a href="#">О нас</a></li>
-                     <li class="header__menu-item"><a href="#">Контакты</a></li>
-                 </ul>
-             </nav>
              <div class="mob-header-icon">
                  <svg class="mob-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M3 5H21" stroke="#FFFEF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                      <path d="M3 12H21" stroke="#FFFEF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                      <path d="M3 19H21" stroke="#FFFEF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                  </svg>
+             </div>
+             <div class="mob-cross close-menu">
+                 <div class="mob-cross-line"></div>
+                 <div class="mob-cross-line"></div>
              </div>
              <a href="#" class="logo">
                  <svg class="logo-top" viewBox="0 0 140 35" xmlns="http://www.w3.org/2000/svg">
@@ -52,6 +47,36 @@
                  </svg>
              </div>
          </div>
+         <div class="mobile-menu">
+             <nav class="header__menu">
+                 <ul>
+                     <li class="header__menu-item"><a href="#">Услуги</a></li>
+                     <li class="header__menu-item"><a href="#">цены</a></li>
+                     <li class="header__menu-item"><a href="#">Проекты</a></li>
+                     <li class="header__menu-item"><a href="#">О нас</a></li>
+                     <li class="header__menu-item"><a href="#">Контакты</a></li>
+                 </ul>
+             </nav>
+             <div class="mobile-menu__phone"><div>+7 963 77 9999 2</div></div>
+             <div class="mobile-menu__city"><div>Санкт-Петербург</div></div>
+             <div class="mobile-menu__gray-line"></div>
+             <div class="mobile-menu__button-anchor black-button">
+                 <div class="main-view__button-text-wrapper">
+                     <div class="main-view__button-text">оставить<br/>заявку</div>
+                 </div>
+                 <div class="main-view__arrow-wrapper">
+                     <div class="main-view__arrow">
+                         <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                             <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                     </div>
+                 </div>
+                 <div class="animation-button-height">
+                     <div class="round-button"></div>
+                 </div>
+             </div>
+         </div>
      </header>
      <div id="loading-section">
          <div class="logo">
@@ -67,7 +92,7 @@
          </div>
      </div>
      <div id="container">
-         <div data-anchor="custom-design" class="mb-8 vh-100 white-header fade-in">
+         <div data-anchor="custom-design" class="mb-8 white-header fade-in">
              <section class="main-view">
                  <div class="section-bg">
                      <img src="../assets/images/069_DSCF4268-HDR.png" alt="">
@@ -93,7 +118,7 @@
                      <div class="main-view__gray-line"><div class="gray-line"></div></div>
                      <div class="main-view__content">
                          <div class="slide-up-in-view__container main-view__title">
-                             <div class="slide-up-in-view">
+                             <div class="slide-up-in-view150">
                                  Эксклюзивный<br/>
                                  дизайн под ключ<br/>
                                  для исключительных<br/>
@@ -105,7 +130,7 @@
                                  <div class="slide-down-in-view">Более 10 лет с вами</div>
                              </div>
                              <div class="main-view__footer-right animation-slide-down__container">
-                                 <div class="slide-down-in-view">
+                                 <div class="slide-down-in-view150">
                                      Создадим эксклюзивный интерьер Вашеий мечты под Ваш<br>
                                      бюджет, в срок, по официальному договору. Воплотим<br>
                                      его в точности, пока вы занимаетесь своими делами
@@ -116,7 +141,7 @@
                  </div>
              </section>
          </div>
-         <div animation-steps="2" animation-mob-steps="2" animation-step="0" white-header-steps="1" data-anchor="projects" class="mb-8 projects-section">
+         <div data-anchor="projects" class="mb-8 projects-section">
              <section class="projects">
                  <div class="projects__button-anchor">
                      <div class="main-view__button-text-wrapper">
@@ -137,7 +162,7 @@
                  <div class="projects-top black-header">
                      <div class="projects-top__content">
                          <div class="animation-slide-down__container">
-                             <div class="projects-top__title  slide-down-in-view duration-1">
+                             <div class="projects-top__title  slide-down-in-view150 duration-1">
                                  Познакомьтесь<br>
                                  с нашими проектами<br>
                                  и убедитесь сами
@@ -181,82 +206,198 @@
                          </div>
                      </div>
                  </div>
-                 <div class="projects-swiper-box white-header">
-                     <div class="swiper projects-swiper ">
-                         <div class="swiper-wrapper">
-                             <div class="swiper-slide">
-                                 <div class="projects-swiper-slide__content">
-                                     <div class="projects-swiper-slide__button-anchor">
-                                         <div class="main-view__button-text-wrapper">
-                                             <div class="main-view__button-text">оставить<br>заявку</div>
-                                         </div>
-                                         <div class="main-view__arrow-wrapper">
-                                             <div class="main-view__arrow">
-                                                 <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                     <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                     <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                 </svg>
+                 <div class="projects-swiper-box--animation">
+                     <div id="projects-box" class="projects-swiper-box white-header">
+                         <div class="swiper projects-swiper ">
+                             <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                     <div class="projects-swiper-slide__content">
+                                         <div class="projects-swiper-slide__button-anchor">
+                                             <div class="main-view__button-text-wrapper">
+                                                 <div class="main-view__button-text">оставить<br>заявку</div>
+                                             </div>
+                                             <div class="main-view__arrow-wrapper">
+                                                 <div class="main-view__arrow">
+                                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                     </svg>
+                                                 </div>
+                                             </div>
+                                             <div class="animation-button-height">
+                                                 <div class="round-button"></div>
                                              </div>
                                          </div>
-                                         <div class="animation-button-height animation-height">
-                                             <div class="round-button"></div>
+                                         <div class="projects-swiper-slide__title">
+                                             <div class="projects-swiper-slide__title-animation-wrapper">
+                                                 <div class="projects-swiper-slide__title-animation">White Khamovniki</div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__text">
+                                             <div class="projects-swiper-slide__text-animation-wrapper">
+                                                 <div class="projects-swiper-slide__text-animation">Оформление квартиры</div>
+                                             </div>
                                          </div>
                                      </div>
-                                     <div class="projects-swiper-slide__title">
-                                         <div class="projects-swiper-slide__title-animation-wrapper">
-                                             <div class="projects-swiper-slide__title-animation">White Khamovniki</div>
-                                         </div>
-                                     </div>
-                                     <div class="projects-swiper-slide__text">
-                                         <div class="projects-swiper-slide__text-animation-wrapper">
-                                             <div class="projects-swiper-slide__text-animation">Оформление квартиры</div>
-                                         </div>
+                                     <div class="projects-swiper-slide__wrapper projects-swiper-slide__wrapper-a">
+                                         <img class="slide-up-and-scale-in-view" src="../assets/images/069_DSCF4268-HDR.png" alt="">
                                      </div>
                                  </div>
-                                 <div class="projects-swiper-slide__wrapper projects-swiper-slide__wrapper-a">
-                                     <img class="slide-up-and-scale-in-view" src="../assets/images/069_DSCF4268-HDR.png" alt="">
+                                 <div class="swiper-slide">
+                                     <div class="projects-swiper-slide__content">
+                                         <div class="projects-swiper-slide__button-anchor">
+                                             <div class="main-view__button-text-wrapper">
+                                                 <div class="main-view__button-text">оставить<br>заявку</div>
+                                             </div>
+                                             <div class="main-view__arrow-wrapper">
+                                                 <div class="main-view__arrow">
+                                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                     </svg>
+                                                 </div>
+                                             </div>
+                                             <div class="animation-button-height">
+                                                 <div class="round-button"></div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__title">
+                                             <div class="projects-swiper-slide__title-animation-wrapper">
+                                                 <div class="projects-swiper-slide__title-animation">White1 Khamovniki</div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__text">
+                                             <div class="projects-swiper-slide__text-animation-wrapper">
+                                                 <div class="projects-swiper-slide__text-animation">Оформление квартиры</div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="projects-swiper-slide__wrapper">
+                                         <img class="slide-up-and-scale-in-view" src="../assets/images/MSC-21.png" alt="">
+                                     </div>
                                  </div>
-                             </div>
-                             <div class="swiper-slide">
-                                 <div class="projects-swiper-slide__wrapper">
-                                     <img class="slide-up-and-scale-in-view" src="../assets/images/MSC-21.png" alt="">
+                                 <div class="swiper-slide">
+                                     <div class="projects-swiper-slide__content">
+                                         <div class="projects-swiper-slide__button-anchor">
+                                             <div class="main-view__button-text-wrapper">
+                                                 <div class="main-view__button-text">оставить<br>заявку</div>
+                                             </div>
+                                             <div class="main-view__arrow-wrapper">
+                                                 <div class="main-view__arrow">
+                                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                     </svg>
+                                                 </div>
+                                             </div>
+                                             <div class="animation-button-height">
+                                                 <div class="round-button"></div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__title">
+                                             <div class="projects-swiper-slide__title-animation-wrapper">
+                                                 <div class="projects-swiper-slide__title-animation">White Khamovniki</div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__text">
+                                             <div class="projects-swiper-slide__text-animation-wrapper">
+                                                 <div class="projects-swiper-slide__text-animation">Оформление квартиры</div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="projects-swiper-slide__wrapper">
+                                         <img class="slide-up-and-scale-in-view" src="../assets/images/069_DSCF4268-HDR.png" alt="">
+                                     </div>
                                  </div>
-                             </div>
-                             <div class="swiper-slide">
-                                 <div class="projects-swiper-slide__wrapper">
-                                     <img class="slide-up-and-scale-in-view" src="../assets/images/069_DSCF4268-HDR.png" alt="">
+                                 <div class="swiper-slide">
+                                     <div class="projects-swiper-slide__content">
+                                         <div class="projects-swiper-slide__button-anchor">
+                                             <div class="main-view__button-text-wrapper">
+                                                 <div class="main-view__button-text">оставить<br>заявку</div>
+                                             </div>
+                                             <div class="main-view__arrow-wrapper">
+                                                 <div class="main-view__arrow">
+                                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                     </svg>
+                                                 </div>
+                                             </div>
+                                             <div class="animation-button-height">
+                                                 <div class="round-button"></div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__title">
+                                             <div class="projects-swiper-slide__title-animation-wrapper">
+                                                 <div class="projects-swiper-slide__title-animation">White Khamovniki</div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__text">
+                                             <div class="projects-swiper-slide__text-animation-wrapper">
+                                                 <div class="projects-swiper-slide__text-animation">Оформление квартиры</div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="projects-swiper-slide__wrapper">
+                                         <img class="slide-up-and-scale-in-view" src="../assets/images/MSC-21.png" alt="">
+                                     </div>
                                  </div>
-                             </div>
-                             <div class="swiper-slide">
-                                 <div class="projects-swiper-slide__wrapper">
-                                     <img class="slide-up-and-scale-in-view" src="../assets/images/MSC-21.png" alt="">
-                                 </div>
-                             </div>
-                             <div class="swiper-slide">
-                                 <div class="projects-swiper-slide__wrapper">
-                                     <img class="slide-up-and-scale-in-view" src="../assets/images/069_DSCF4268-HDR.png" alt="">
+                                 <div class="swiper-slide">
+                                     <div class="projects-swiper-slide__content">
+                                         <div class="projects-swiper-slide__button-anchor">
+                                             <div class="main-view__button-text-wrapper">
+                                                 <div class="main-view__button-text">оставить<br>заявку</div>
+                                             </div>
+                                             <div class="main-view__arrow-wrapper">
+                                                 <div class="main-view__arrow">
+                                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                     </svg>
+                                                 </div>
+                                             </div>
+                                             <div class="animation-button-height">
+                                                 <div class="round-button"></div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__title">
+                                             <div class="projects-swiper-slide__title-animation-wrapper">
+                                                 <div class="projects-swiper-slide__title-animation">White Khamovniki</div>
+                                             </div>
+                                         </div>
+                                         <div class="projects-swiper-slide__text">
+                                             <div class="projects-swiper-slide__text-animation-wrapper">
+                                                 <div class="projects-swiper-slide__text-animation">Оформление квартиры</div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="projects-swiper-slide__wrapper">
+                                         <img class="slide-up-and-scale-in-view" src="../assets/images/069_DSCF4268-HDR.png" alt="">
+                                     </div>
                                  </div>
                              </div>
                          </div>
-                     </div>
-                     <div class="projects__gray-line"><div class="gray-line"></div></div>
-                     <div class="projects-swiper__navigation">
-                         <div class="projects-swiper__navigation-animation">
-                             <div class="projects-swiper__prev">
-                                 <svg class="icon-arrow-left" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                     <path d="M9.57031 6.42969L3.50031 12.4997L9.57031 18.5697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                     <path d="M20.5 12.5H3.67" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                 </svg>
-                             </div>
-                             <div class="projects-swiper__next">
-                                 <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                     <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                     <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                 </svg>
+                         <div class="projects__gray-line"><div class="gray-line"></div></div>
+                         <div class="projects-swiper__navigation">
+                             <div class="projects-swiper__navigation-animation">
+                                 <div class="projects-swiper__prev">
+                                     <svg class="icon-arrow-left" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M9.57031 6.42969L3.50031 12.4997L9.57031 18.5697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                         <path d="M20.5 12.5H3.67" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                     </svg>
+                                 </div>
+                                 <div class="projects-swiper__next">
+                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                     </svg>
+                                 </div>
                              </div>
                          </div>
+                         <div class="white-cross"><div></div><div></div></div>
                      </div>
                  </div>
+                 <div class="projects-swiper-box--holder"></div>
              </section>
          </div>
          <div animation-mob-steps="3" animation-step="0" data-anchor="supervisors" class="mb-8 fade-in">
@@ -298,7 +439,7 @@
                                 </div>
                             </div>
                             <div class="slide-up-in-view__container">
-                                <div class="supervisors__sub-title slide-up-in-view duration-1">
+                                <div class="supervisors__sub-title slide-up-in-view150 duration-1">
                                     Наша миссия - создание вечноценных<br>
                                     интерьеров, пока вы заняты любимым делом,<br>
                                     семьей или работой
@@ -317,7 +458,7 @@
                             <div class="supervisors__content-text">
                                 <div class="supervisors__content-text-1 text">
                                     <div class="animation-slide-down__container">
-                                        <p class="slide-down-in-view duration-1">
+                                        <p class="slide-down-in-view150 duration-1">
                                             Наши клиенты чаще всего уже сталкивались с ремонтами и дизайнерами, и у каждого возникали ситуации,
                                             которые оставили определенное впечатление - переживания о сроках, бюджете, прозрачности,
                                             конфиденциальности, о том, что больше нет желания вникать во все нюансы, тратить личное ценное время,
@@ -328,7 +469,7 @@
                                 <div class="supervisors__content-text-spicer"></div>
                                 <div class="supervisors__content-text-2 text">
                                     <div class="animation-slide-down__container">
-                                        <p class="slide-down-in-view duration-1">
+                                        <p class="slide-down-in-view150 duration-1">
                                             Наша работа заключается в продумывании интерьера для каждого конкретного человека и в максимальном
                                             освобождении его от ненужных забот. Ремонт может быть приятным, потому что мы выполняем весь комплекс услуг,
                                             начиная с первичной консультации, заканчивая декорированием и фотофиксацией
@@ -471,7 +612,7 @@
                              </div>
                              <div class="services-desc__content">
                                  <div class="services-desc__col">
-                                     <div class="services-desc__img-wrapper">
+                                     <div class="services-desc__img-wrapper white-header">
                                          <div class="services-desc__img-animation">
                                             <img class="scale-into-view" src="../assets/images/service5.png" alt="">
                                          </div>
@@ -500,7 +641,7 @@
                                      </div>
                                  </div>
                                  <div class="services-desc__col pb-8">
-                                     <div class="services-desc__img-wrapper">
+                                     <div class="services-desc__img-wrapper white-header">
                                          <div class="services-desc__img-animation">
                                             <img class="scale-into-view" src="../assets/images/service6.png" alt="">
                                          </div>
@@ -606,7 +747,7 @@
                                  <div class="swiper-wrapper">
                                      <div class="swiper-slide">
                                          <div class="specialists-swiper__content">
-                                             <div class="specialists-swiper__preview-img">
+                                             <div class="specialists-swiper__preview-img ">
                                                  <img src="../assets/images/prev_spes1.png" alt="">
                                              </div>
                                              <div class="specialists-swiper__text">
@@ -615,7 +756,7 @@
                                                      <div class="specialists-swiper__desc slide-up-in-view">3D asd Visualization Designer</div>
                                                  </div>
                                              </div>
-                                             <div class="specialists-swiper__img">
+                                             <div class="specialists-swiper__img white-header">
                                                  <img class="scale-into-view" src="../assets/images/spes1.png" alt="">
                                              </div>
                                          </div>
@@ -659,7 +800,7 @@
                  </div>
              </section>
          </div>
-         <div animation-mob-steps="2" animation-steps="2" animation-step="0" white-header-steps="1" class="mb-8 fade-in video premium-section" data-anchor="premium">
+         <div class="mb-8 fade-in video premium-section" data-anchor="premium">
              <section class="premium">
                 <div class="premium__top">
                     <div class="premium__top-container">
@@ -740,7 +881,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="premium__video">
+                 <div class="premium__video white-header">
                      <video id="premium-video" muted="" loop="true" poster="../assets/images/mart_video/vlcsnap-2025-04-28-19h28m31s677.webp">
                          <source src="../assets/images/mart_video/OUT_0428.mp4" type="video/mp4">
                      </video>
@@ -755,7 +896,7 @@
                         <div class="steps__content">
                             <div class="steps__title">
                                 <div class="slide-up-in-view__container">
-                                    <div class="slide-up-in-view duration-1">
+                                    <div class="slide-up-in-view150 duration-1">
                                         Благодаря<br class="br-mob"> поэтапной <br class="br-mob"> работе,<br>
                                         мы с Вами<br class="br-mob"> уверенно двигаемся<br><br class="br-mob">
                                         к качественному<br class="br-mob"> результату
@@ -786,7 +927,7 @@
                                                 <div class="slide-down-in-view duration-1">дизайн проект</div>
                                             </div>
                                         </div>
-                                        <div class="steps-list__img-wrapper">
+                                        <div class="steps-list__img-wrapper white-header">
                                             <div class="steps-list__img-animation">
                                                 <img class="scale-into-view" src="../assets/images/steps1.png" alt="">
                                             </div>
@@ -848,7 +989,7 @@
                                                 <div class="slide-down-in-view duration-1">сопровождение</div>
                                             </div>
                                         </div>
-                                        <div class="steps-list__img-wrapper">
+                                        <div class="steps-list__img-wrapper white-header">
                                             <div class="steps-list__img-animation">
                                                 <img class="scale-into-view" src="../assets/images/steps2.png" alt="">
                                             </div>
@@ -968,7 +1109,7 @@
                                     </div>
                                 </div>
                                  <div class="piter__middle">
-                                     <div class="piter__middle-animation">
+                                     <div class="piter__middle-animation white-header">
                                          <img class="scale-into-view" src="../assets/images/piter2.png" alt="">
                                      </div>
                                  </div>
@@ -996,7 +1137,7 @@
                          <div class="result__left">
                              <div class="result__title">
                                  <div class="slide-up-in-view__container">
-                                     <div class="slide-up-in-view duration-1">
+                                     <div class="slide-up-in-view100 duration-1">
                                          вы получаете<br>
                                          результат сверх<br>
                                          ожиданий
@@ -1005,7 +1146,7 @@
                              </div>
                              <div class="result__text">
                                  <div class="slide-up-in-view__container">
-                                     <div class="slide-up-in-view duration-1">
+                                     <div class="slide-up-in-view100 duration-1">
                                          Выбирая для себя полный цикл услуг, вы получаете не только красивые картинки, но и полное сопровождение, оставляя для себя ту меру вовлеченности в процесс, которая Вам комфортна и интересна. Вы можете уехать
                                          в отпуск, быть заняты работой, а дом вашей мечты будет строиться, наполняться, оживать.
                                      </div>
@@ -1032,7 +1173,7 @@
                                  </div>
                              </a>
                              <div class="result-swiper__navigation">
-                                 <div class="result-swiper__navigation-animation">
+                                 <div class="result-swiper__navigation-animation slide-up-in-view">
                                      <div class="result-swiper__prev">
                                          <svg class="icon-arrow-left" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                              <path d="M9.57031 6.42969L3.50031 12.4997L9.57031 18.5697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1048,7 +1189,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="result__right">
+                         <div class="result__right scale-into-view white-header">
                              <div class="swiper result-swiper">
                                  <div class="swiper-wrapper">
                                      <div class="swiper-slide">
@@ -1056,11 +1197,11 @@
                                              <div class="result-swiper__slide-animation">
                                                  <div class="result-swiper__slide-left">
                                                      <div class="result-swiper__text">визуализация</div>
-                                                     <div class="result-swiper__img"><img class="scale-into-view" src="../assets/images/before.png" alt=""></div>
+                                                     <div class="result-swiper__img"><img src="../assets/images/before.png" alt=""></div>
                                                  </div>
                                                  <div class="result-swiper__slide-right">
                                                      <div class="result-swiper__text">реализация</div>
-                                                     <div class="result-swiper__img"><img class="scale-into-view" src="../assets/images/after.png" alt=""></div>
+                                                     <div class="result-swiper__img"><img src="../assets/images/after.png" alt=""></div>
                                                  </div>
                                              </div>
                                          </div>
@@ -1106,11 +1247,11 @@
                      <div class="feedback__content">
                          <div class="feedback__top">
                              <div class="feedback__top-animation">
-                                 <div class="feedback__title">
+                                 <div class="feedback__title scale-into-view">
                                      Проектирование и ремонт могут<br>
                                      быть приятными и увлекательными
                                  </div>
-                                 <div class="feedback__title-desc">
+                                 <div class="feedback__title-desc scale-into-view">
                                      А результат будет радовать <br class="br-mob"> Вас долгие годы
                                  </div>
                              </div>
@@ -1190,7 +1331,7 @@
                                 </div>
                             </div>
                              <div class="feedback__img">
-                                 <div class="feedback__img-animation">
+                                 <div class="feedback__img-animation white-header">
                                      <img class="scale-into-view" src="../assets/images/feedback.png" alt="">
                                  </div>
                              </div>
@@ -1296,7 +1437,6 @@
      </div>
 
      <script src="../assets/js/jquery.min.js"></script>
- <script src="../assets/js/pageable.js"></script>
  <script src="../assets/js/swiper.js"></script>
  <script src="../assets/js/main2.js"></script>
      <script src="../assets/js/scrollreveal.js"></script>
