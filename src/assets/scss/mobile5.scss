@@ -241,7 +241,7 @@ $vh: calc(100vh/700);
   .projects .white-cross {
     position: fixed;
     z-index: 11002;
-    top: 2.6rem;
+    top: 2.5rem;
   }
 
   .header {
@@ -573,11 +573,6 @@ $vh: calc(100vh/700);
     height: 19.5rem;
   }
 
-  .projects-section {
-    padding-top: 10rem;
-    margin-bottom: 8rem;
-  }
-
   .mob-cross {
     width: 2.4rem;
     height: 2.4rem;
@@ -609,8 +604,9 @@ $vh: calc(100vh/700);
 
   .modal-box {
     position: fixed;
+    height: 0;
+    overflow: hidden;
     width: 100vw;
-    height: 100vh;
     left: 0;
     top: 0;
     z-index: 20000;
@@ -618,6 +614,7 @@ $vh: calc(100vh/700);
     transform: translateX(-105%);
     transition: 0.3s;
     &.show-modal {
+      height: 100vh;
       transform: translateX(0);
       transition: 1s;
       .mob-cross {

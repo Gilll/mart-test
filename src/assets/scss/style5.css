@@ -18,6 +18,8 @@ a a:visited {
   margin-top: 2rem;
   width: 100%;
   mix-blend-mode: normal;
+  top: 0;
+  left: 0;
 }
 .header path {
   transition: 0.5s;

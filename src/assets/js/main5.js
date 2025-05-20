@@ -678,6 +678,7 @@ $(document).ready(function() {
             direction: 'horizontal',
             loop: false,
             slidesPerView: 1,
+            spaceBetween: 20,
             //effect: 'creative',
             creativeEffect: {},
             speed: 1000,
