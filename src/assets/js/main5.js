@@ -14,7 +14,10 @@ $(document).ready(function() {
         headerTimeout,
         whiteHeaderOffsets = []
 
-    $(".white-header").each(function () {
+    /*$(".white-header").each(function () {
+        whiteHeaderOffsets.push([$(this).offset().top, $(this).outerHeight() - 70])
+    })*/
+    $(".giga-white-header").each(function () {
         whiteHeaderOffsets.push([$(this).offset().top, $(this).outerHeight() - 70])
     })
 
@@ -23,10 +26,10 @@ $(document).ready(function() {
         clearTimeout(headerTimeout)
         headerTimeout = setTimeout(function () {
             let offset = $(document).scrollTop()
-            header.removeClass("white")
+            header.addClass("white-bg")
             for (let i = 0; i < whiteHeaderOffsets.length; i++) {
                 if (offset >= whiteHeaderOffsets[i][0] && offset < (whiteHeaderOffsets[i][0] + whiteHeaderOffsets[i][1] - 30)) {
-                    header.addClass("white")
+                    header.removeClass("white-bg")
                 }
             }
             header.removeClass("hidden-header")
@@ -625,6 +628,17 @@ $(document).ready(function() {
             }
         });
     }
+    $("[call-modal]").click(function () {
+        let modalId = $(this).attr("call-modal"),
+            modal = $("#" + modalId)
+        modal.addClass("show-modal")
+        $("body").addClass("body-lock")
+    })
+
+    $(".modal-box .mob-cross").click(function () {
+        $(this).parent().parent().parent().removeClass("show-modal")
+        $("body").removeClass("body-lock")
+    })
 
     if ($(".specialists-swiper")) {
         const swiper = new Swiper('.specialists-swiper', {
@@ -632,10 +646,10 @@ $(document).ready(function() {
             loop: false,
             slidesPerView: 1,
             //effect: 'creative',
-            /*autoplay: {
+            autoplay: {
                 delay: 3000,
-            },*/
-            allowTouchMove: false,
+            },
+            //allowTouchMove: false,
             effect: 'fade',
             creativeEffect: {},
             speed: 1000,
@@ -737,7 +751,7 @@ $(document).ready(function() {
         setTimeout(function () {
             that.addClass("top0")
         }, 50)
-        header.addClass("white")
+        header.removeClass("white-bg").addClass("hide-phone")
         $("body").addClass("body-lock")
     })
 
@@ -746,6 +760,7 @@ $(document).ready(function() {
 
         $("body").removeClass("body-lock")
         that.removeClass("top0").parent().removeClass("isSelected")
+        header.addClass("white-bg").removeClass("hide-phone")
         setTimeout(function () {
             that.attr("style", "").parent().removeClass("fixed-block")
         }, 1000)

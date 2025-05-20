@@ -199,28 +199,61 @@
     position: relative;
     z-index: 10001;
   }
+  .mob-phone {
+    opacity: 1;
+    transition: 1s;
+  }
+  .projects .white-cross {
+    position: fixed;
+    z-index: 11002;
+    top: 2.6rem;
+  }
   .header {
     margin: 0;
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
+    transition: width 0s;
   }
   .header path {
-    fill: #140E0A;
-  }
-  .header .mob-header-icon path {
-    stroke: #140E0A;
-  }
-  .header.white.menu-is-open path {
-    fill: #140E0A;
-  }
-  .header.white.menu-is-open .mob-header-icon path {
-    stroke: #140E0A;
-  }
-  .header.white path {
     fill: #FFFEF8;
   }
-  .header.white .mob-header-icon path {
+  .header .mob-header-icon path {
     stroke: #FFFEF8;
+  }
+  .header.hide-phone {
+    width: 35.3rem;
+    transition: width 0s;
+  }
+  .header.hide-phone .mob-phone {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0s;
+  }
+  .header.hide-phone .header__container {
+    width: 33.7rem;
+    margin: 0 0 0 1.6rem;
+    transition: margin-right 0s;
+    overflow: hidden;
+  }
+  .header.hide-phone .logo {
+    position: relative;
+    left: 1.2rem;
+  }
+  .header.white-bg {
+    background-color: white;
+  }
+  .header.white-bg.menu-is-open path {
+    fill: #140E0A;
+  }
+  .header.white-bg.menu-is-open .mob-header-icon path {
+    stroke: #140E0A;
+  }
+  .header.white-bg path {
+    fill: #140E0A;
+  }
+  .header.white-bg .mob-header-icon path {
+    stroke: #140E0A;
   }
   .logo-top {
     height: 2.2rem;
@@ -484,6 +517,72 @@
     top: 0;
     left: 0;
     transition: 0.3s;
+  }
+  .modal-box {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 20000;
+    background-color: #FFFEF8;
+    transform: translateX(-105%);
+    transition: 0.3s;
+  }
+  .modal-box.show-modal {
+    transform: translateX(0);
+    transition: 1s;
+  }
+  .modal-box.show-modal .mob-cross {
+    display: block;
+  }
+  .modal-box.show-modal .mob-cross-line {
+    opacity: 1;
+    transform: rotate(45deg);
+    transition: 1s 0.5s;
+    transform-origin: center;
+  }
+  .modal-box.show-modal .mob-cross-line:last-child {
+    transform: rotate(-45deg);
+  }
+  .modal-box .mob-cross {
+    position: relative;
+  }
+  .modal-content {
+    padding: 1.6rem 1.6rem 4rem;
+  }
+  .modal-content__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1.6rem;
+  }
+  .modal-content__bottom {
+    position: relative;
+    overflow: hidden;
+    height: available;
+  }
+  .modal-content__bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .feedback-modal__title {
+    font-family: "Forum", serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+  .feedback-modal__form input {
+    padding-bottom: 1.2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  .feedback-modal__form input:last-child {
+    margin-bottom: 6rem;
   }
   .menu-is-open .mobile-menu {
     transform: translateX(0);
@@ -2529,7 +2628,7 @@
   }
   .header {
     opacity: 1;
-    transition: 1s;
+    transition: opacity 1s, width 0s;
   }
 }
 
