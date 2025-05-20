@@ -1350,6 +1350,7 @@ $vh: calc(100vh/700);
     position: relative;
     overflow: hidden;
     transition: 1s;
+    margin-bottom: 0;
   }
   .steps-list__items {
     position: relative;
@@ -2470,9 +2471,6 @@ $vh: calc(100vh/700);
       height: 26rem;
     }
   }
-  .intoAnimation .interiors-swiper-slide__img-animation {
-    height: 26rem;
-  }
   .interiors.compl .interiors-swiper-slide__item:first-child .interiors-swiper-slide__content {
     padding-top: 2.4rem;
     width: 36.1rem;
@@ -2490,13 +2488,16 @@ $vh: calc(100vh/700);
     position: relative;
   }
   .design-main {
-    margin-bottom: 8rem;
+    height: 100vh;
   }
   .design-main__content {
     padding: 0;
     height: auto;
     width: 100%;
     left: 0;
+  }
+  .interiors-swiper-slide__content {
+    width: 36.1rem;
   }
   .about-advantages__item-wrapper {
     padding: 0 1.6rem;
@@ -2642,6 +2643,9 @@ $vh: calc(100vh/700);
     .interiors-swiper-slide__content-text {
       width: 36.1rem;
     }
+  }
+  .interiors-swiper-slide__item:last-child {
+    display: none;
   }
   .vision-main__content {
     margin: 0 auto;

@@ -3345,17 +3345,6 @@ input.input-text, textarea.input-text {
   transition: 1s;
 }
 
-.interiors__scroll {
-  padding-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  height: 100vh;
-  min-height: 76rem;
-  width: 100%;
-  padding-bottom: 5rem;
-}
 .interiors__title {
   font-family: Forum, serif;
   font-size: 6rem;
@@ -3372,81 +3361,6 @@ input.input-text, textarea.input-text {
   transition: 0.3s;
 }
 
-.intoAnimation .interiors__gray-line {
-  width: 100%;
-  transition: 1s 1s;
-}
-
-.interiors-swiper__box {
-  width: 172.8rem;
-  margin: 0 auto;
-  height: 52rem;
-  position: relative;
-}
-.interiors-swiper__box .result-swiper__navigation {
-  z-index: 99;
-  bottom: 45.6rem;
-  left: 44.1rem;
-}
-.interiors-swiper-slide {
-  width: 172.8rem;
-  height: 52rem;
-  display: flex;
-  justify-content: space-between;
-}
-.interiors-swiper-slide__item {
-  width: 80.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-.interiors-swiper-slide__img {
-  width: 39.9rem;
-  height: 52rem;
-  display: flex;
-  align-items: end;
-}
-.interiors-swiper-slide__img-animation {
-  width: 39.9rem;
-  height: 0;
-  transition: 0.3s;
-}
-.interiors-swiper-slide__img img {
-  width: 39.9rem;
-  height: 52rem;
-  object-fit: cover;
-  object-position: center;
-}
-.interiors-swiper-slide__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 36.5rem;
-  opacity: 0;
-  transform: scale(0);
-  transition: 1s;
-}
-.interiors-swiper-slide__content-text {
-  font-size: 1.6rem;
-}
-.interiors-swiper-slide__content-title {
-  font-family: Forum, serif;
-  font-size: 2.8rem;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-bottom: 2.4rem;
-}
-
-.swiper-slide-active .interiors-swiper-slide__content {
-  transform: scale(1);
-  opacity: 1;
-  transition: 1s;
-}
-
-.interiors-swiper .swiper-slide-active .interiors-swiper-slide__img-animation {
-  animation: interiors-swiper-clip 1s;
-}
-
 @keyframes interiors-swiper-clip {
   0% {
     height: 0;
@@ -3455,11 +3369,6 @@ input.input-text, textarea.input-text {
     height: 100%;
   }
 }
-.intoAnimation .interiors-swiper-slide__img-animation {
-  height: 52rem;
-  transition: 1s;
-}
-
 .faq__scroll {
   padding-top: 10rem;
   display: flex;
