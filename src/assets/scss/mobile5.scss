@@ -412,9 +412,16 @@ $vh: calc(100vh/700);
   }
 
   .projects-top {
-    height: 41.6rem !important;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    height: auto !important;
     position: relative !important;
     z-index: 3;
+  }
+
+  .project-page.projects-top {
+    padding-top: 10rem;
+    margin-bottom: 0;
   }
 
   .projects-swiper-box {
@@ -1107,16 +1114,8 @@ $vh: calc(100vh/700);
     position: relative;
     overflow: hidden;
   }
-  .intoAnimation .services-desc__col:first-child .services-desc__img-wrapper {
-    height: 36.2rem;
-    transition: 1s;
-  }
   .services-desc__col:first-child {
     margin-bottom: 4rem;
-  }
-
-  .services-desc__col:first-child .services-desc__text {
-    padding-bottom: 10rem;
   }
 
   .services-desc__text-wrapper.sliced {
