@@ -1057,7 +1057,9 @@ section.main-view {
 }
 .premium__gray-line {
   height: 1px;
-  width: 0;
+  width: 100%;
+}
+.premium__gray-line .gray-line {
   transition: 0.3s;
   background-color: rgba(255, 254, 248, 0.5);
 }
@@ -2205,13 +2207,15 @@ input.input-text, textarea.input-text {
 }
 .price-supervision__gray-line {
   height: 1px;
-  width: 0;
-  background: rgba(20, 14, 10, 0.16);
+  width: 100%;
   position: absolute;
   left: 0;
   bottom: 6.4rem;
-  transition: 0.3s;
   z-index: 3;
+}
+.price-supervision__gray-line .gray-line {
+  background: rgba(20, 14, 10, 0.16);
+  transition: 0.3s;
 }
 .price-supervision__button-anchor {
   position: absolute;
@@ -2500,12 +2504,6 @@ input.input-text, textarea.input-text {
   height: 4rem;
 }
 .project-details__left {
-  width: 40rem;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2513,6 +2511,10 @@ input.input-text, textarea.input-text {
 .project-details__left-text {
   width: 28rem;
   margin-bottom: 4rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 .project-details__left-img {
   width: 25.1rem;
@@ -2631,7 +2633,7 @@ input.input-text, textarea.input-text {
   justify-content: center;
 }
 
-.intoAnimation .project-description__top-item {
+.project-description__top-item {
   height: 9.5rem;
   padding-top: 2.3rem;
   padding-bottom: 2.3rem;

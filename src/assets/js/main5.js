@@ -235,6 +235,40 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
+    ScrollReveal().reveal('.price-supervision__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 170,
+            right: 0,
+            bottom: 100,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
+    ScrollReveal().reveal('.premium__gray-line .gray-line', {
+        reset: true,
+        duration: 1000,
+        opacity: 1,
+        viewOffset: {
+            top: 170,
+            right: 0,
+            bottom: 100,
+            left: 0,
+        },
+        beforeReveal: function (el) {
+            el.classList.add("show")
+        },
+        beforeReset: function (el) {
+            el.classList.remove("show")
+        },
+    });
     ScrollReveal().reveal('.design-main__gray-line .gray-line', {
         reset: true,
         duration: 1000,
@@ -672,6 +706,63 @@ $(document).ready(function() {
             }
         });
     }
+    if ($(".piter-swiper")) {
+        const swiper = new Swiper('.piter-swiper', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 1.9,
+            //effect: 'creative',
+            autoplay: {
+                delay: 5000,
+            },
+            spaceBetween: 16,
+            //allowTouchMove: false,
+            creativeEffect: {},
+            speed: 1000,
+            navigation: {
+                nextEl: '.piter-swiper__next',
+                prevEl: '.piter-swiper__prev',
+            }
+        });
+    }
+    if ($(".premium-service-slider")) {
+        const swiper = new Swiper('.premium-service-slider', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 1.9,
+            //effect: 'creative',
+            autoplay: {
+                delay: 5000,
+            },
+            spaceBetween: 16,
+            //allowTouchMove: false,
+            creativeEffect: {},
+            speed: 1000,
+            navigation: {
+                nextEl: '.premium-service-swiper__next',
+                prevEl: '.premium-service-swiper__prev',
+            }
+        });
+    }
+    if ($(".specialists-swiper--row")) {
+        const swiper = new Swiper('.specialists-swiper--row', {
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 1.9,
+            //effect: 'creative',
+            autoplay: {
+                delay: 5000,
+            },
+            spaceBetween: 16,
+            //allowTouchMove: false,
+            creativeEffect: {},
+            speed: 1000,
+            navigation: {
+                nextEl: '.specialists-swiper__next',
+                prevEl: '.specialists-swiper__prev',
+            }
+        });
+    }
 
     if ($(".result-swiper")) {
         const swiper = new Swiper('.result-swiper', {
@@ -741,14 +832,14 @@ $(document).ready(function() {
 
     let startOffset = 0;
 
-    $(".projects__button-anchor .round-button").click(function () {
+    $(".fullscreen-projects").click(function () {
         let that = $(".projects-swiper-box--animation"),
             topOffset = that.offset().top - $(document).scrollTop()
 
 
         that.css("transition",  "1s")
         that.css("top",  topOffset + "px")
-        that.parent().addClass("isSelected").addClass("fixed-block")
+        that.parent().addClass("fixed-block")
         setTimeout(function () {
             that.addClass("top0")
         }, 50)
@@ -760,7 +851,7 @@ $(document).ready(function() {
         let that = $(".projects-swiper-box--animation")
 
         $("body").removeClass("body-lock")
-        that.removeClass("top0").parent().removeClass("isSelected")
+        that.removeClass("top0").parent()
         header.addClass("white-bg").removeClass("hide-phone")
         setTimeout(function () {
             that.attr("style", "").parent().removeClass("fixed-block")
