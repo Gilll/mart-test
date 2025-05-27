@@ -676,8 +676,13 @@ $(document).ready(function() {
     })
 
     $(".modal-box .mob-cross").click(function () {
-        $(this).parent().parent().parent().removeClass("show-modal")
+        $(this).parent().removeClass("show-modal").removeClass("success")
         $("body").removeClass("body-lock")
+    })
+
+    $(".time-picker-item").click(function () {
+        $(this).parent().children().removeClass("active")
+        $(this).addClass("active")
     })
 
     if ($(".specialists-swiper")) {
@@ -851,6 +856,10 @@ $(document).ready(function() {
         }, 50)
         header.removeClass("white-bg").addClass("hide-phone")
         $("body").addClass("body-lock")
+    })
+
+    $("#send-request").click(function () {
+        $("#feedback-modal").addClass("success")
     })
 
     $(".projects .white-cross").click(function () {

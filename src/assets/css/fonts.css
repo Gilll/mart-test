@@ -5,6 +5,7 @@
     url('../fonts/Circe.woff2') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: block;
 }
 
 @font-face {
@@ -13,5 +14,6 @@
     url('../fonts/Forum.woff2') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: block;
 }
 

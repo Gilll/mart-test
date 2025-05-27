@@ -402,7 +402,98 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 99;
+    z-index: 98;
+  }
+  #request-call-modal .modal-content {
+    padding-top: 4rem;
+  }
+  .page-404 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-404 .gray {
+    color: rgba(20, 14, 10, 0.16);
+  }
+  .s-mb-4 {
+    margin-bottom: 4rem !important;
+  }
+  .breadcrumbs {
+    margin-bottom: 4rem;
+    color: rgba(20, 14, 10, 0.26);
+    padding: 0 1.6rem;
+  }
+  .breadcrumbs a {
+    color: rgba(20, 14, 10, 0.26) !important;
+    margin: 0 0.8rem;
+  }
+  .breadcrumbs a:first-child {
+    margin-left: 0;
+  }
+  .breadcrumbs span {
+    color: rgb(20, 14, 10);
+    margin-left: 0.8rem;
+  }
+  .page-404__content {
+    padding: 10rem 1.6rem 4rem;
+  }
+  .page-404__text {
+    font-size: 1.6rem;
+    line-height: 1.28;
+  }
+  .page404_button {
+    padding: 6rem 0;
+  }
+  .page-404__title {
+    font-family: "Forum", serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 1.6rem;
+  }
+  .page-404__img {
+    flex-grow: 1;
+  }
+  .page-404__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  #request-call-modal .feedback-modal__form input {
+    margin-bottom: 3rem;
+  }
+  .time-picker-item {
+    width: 10.9rem;
+    height: 3.8rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(20, 14, 10, 0.16);
+    color: rgba(20, 14, 10, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.6rem;
+    padding-top: 0.2rem;
+    transition: 1s;
+  }
+  .time-picker-item.active {
+    border: 1px solid rgb(20, 14, 10);
+    color: rgb(20, 14, 10);
+    transition: 1s;
+  }
+  .time-picker-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+  .modal-form__desc {
+    margin-top: 4rem;
+    color: rgba(20, 14, 10, 0.16);
   }
   .top100 {
     top: 100px;
@@ -557,6 +648,12 @@
     transform: translateX(-105%);
     transition: 0.3s;
   }
+  .modal-box .mob-cross {
+    position: absolute;
+    z-index: 4;
+    top: 1.6rem;
+    right: 1.6rem;
+  }
   .modal-box.show-modal {
     height: 100vh;
     transform: translateX(0);
@@ -574,17 +671,16 @@
   .modal-box.show-modal .mob-cross-line:last-child {
     transform: rotate(-45deg);
   }
-  .modal-box .mob-cross {
-    position: relative;
+  .modal-finish .feedback-modal__title {
+    padding: 11rem 1.6rem 0;
+    margin-bottom: 1.6rem;
+  }
+  .modal-finish .feedback-modal__text {
+    padding: 0 1.6rem;
+    margin-bottom: 1.6rem;
   }
   .modal-content {
-    padding: 1.6rem 1.6rem 4rem;
-  }
-  .modal-content__top {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 1.6rem;
+    padding: 11rem 1.6rem 4rem;
   }
   .modal-content__bottom {
     position: relative;
@@ -2162,6 +2258,47 @@
     margin: 0 auto;
     padding: 4rem 0 5.6rem;
   }
+  #loading-section .logo-top {
+    height: 3.5rem;
+    width: 14rem;
+    margin-bottom: 0.5rem;
+  }
+  #loading-section .logo-middle {
+    height: 1rem;
+    width: 7.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #loading-section .logo-bottom {
+    height: 1rem;
+    width: 6.1rem;
+  }
+  .modal-finish {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+    background-color: #FFFEF8;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-finish .modal-content__bottom {
+    flex-grow: 1;
+  }
+  .modal-form {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+  .success .modal-finish {
+    z-index: 3;
+    opacity: 3;
+    transition: 1s;
+  }
   .project-gallery__text-left {
     font-family: "Forum", serif;
     font-size: 1.6rem;
@@ -2338,9 +2475,6 @@
     left: 2.4rem;
     bottom: 2.4rem;
     height: 14.5rem;
-  }
-  .architecture-main {
-    padding-bottom: 8rem;
   }
   .architecture-main__content {
     width: 36.1rem;
