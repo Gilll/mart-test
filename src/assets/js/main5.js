@@ -21,7 +21,7 @@ $(document).ready(function() {
         whiteHeaderOffsets.push([$(this).offset().top, $(this).outerHeight() - 70])
     })
 
-    $(document).on("scroll", function (e) {
+    function checkHeaderColor() {
         header.addClass("hidden-header")
         clearTimeout(headerTimeout)
         headerTimeout = setTimeout(function () {
@@ -34,7 +34,13 @@ $(document).ready(function() {
             }
             header.removeClass("hidden-header")
         }, 500)
+    }
+
+    $(document).on("scroll", function (e) {
+        checkHeaderColor()
     })
+
+    checkHeaderColor()
 
     ScrollReveal().reveal('.slide-up-in-view', {
         reset: true,
