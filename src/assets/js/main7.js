@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
 
+    ScrollReveal.debug = true;
+
     if ($("#play-video")) {
         $("#play-video").click(function() {
             let vid = document.getElementById("premium-video")
@@ -21,7 +23,7 @@ $(document).ready(function() {
         whiteHeaderOffsets.push([$(this).offset().top, $(this).outerHeight() - 70])
     })
 
-    function checkHeaderColor() {
+    $(document).on("scroll", function (e) {
         header.addClass("hidden-header")
         clearTimeout(headerTimeout)
         headerTimeout = setTimeout(function () {
@@ -34,15 +36,9 @@ $(document).ready(function() {
             }
             header.removeClass("hidden-header")
         }, 500)
-    }
-
-    $(document).on("scroll", function (e) {
-        checkHeaderColor()
     })
 
-    checkHeaderColor()
-
-    ScrollReveal().reveal('.slide-up-in-view', {
+    if ($(".slide-up-in-view")) ScrollReveal().reveal('.slide-up-in-view', {
         reset: true,
         duration: 1000,
         distance: '100%',
@@ -53,7 +49,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.slide-up-in-view100', {
+    if ($(".slide-up-in-view100")) ScrollReveal().reveal('.slide-up-in-view100', {
         reset: true,
         duration: 1000,
         distance: '100%',
@@ -64,7 +60,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.slide-up-in-view150', {
+    if ($(".slide-up-in-view150")) ScrollReveal().reveal('.slide-up-in-view150', {
         reset: true,
         duration: 1000,
         distance: '100%',
@@ -75,7 +71,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.slide-up-in-view0', {
+    if ($(".slide-up-in-view0")) ScrollReveal().reveal('.slide-up-in-view0', {
         reset: true,
         duration: 1000,
         distance: '100%',
@@ -86,7 +82,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.slide-down-in-view', {
+    if ($(".slide-down-in-view")) ScrollReveal().reveal('.slide-down-in-view', {
         reset: true,
         duration: 1000,
         distance: '-100%',
@@ -97,7 +93,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.slide-down-in-view150', {
+    if ($(".slide-down-in-view150")) ScrollReveal().reveal('.slide-down-in-view150', {
         reset: true,
         duration: 1000,
         distance: '-100%',
@@ -108,7 +104,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.slide-down-in-view100', {
+    if ($(".slide-down-in-view100")) ScrollReveal().reveal('.slide-down-in-view100', {
         reset: true,
         duration: 1000,
         distance: '-100%',
@@ -119,7 +115,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.slide-left-in-view', {
+    if ($(".slide-left-in-view")) ScrollReveal().reveal('.slide-left-in-view', {
         reset: true,
         duration: 1000,
         distance: '-100%',
@@ -131,7 +127,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.animation-height', {
+    if ($(".animation-height")) ScrollReveal().reveal('.animation-height', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -148,7 +144,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.main-view__button-text', {
+    if ($(".main-view__button-text")) ScrollReveal().reveal('.main-view__button-text', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -165,7 +161,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.main-view__arrow', {
+    if ($(".main-view__arrow")) ScrollReveal().reveal('.main-view__arrow', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -182,7 +178,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.primary-button__circle-anchor', {
+    if ($(".primary-button__circle-anchor")) ScrollReveal().reveal('.primary-button__circle-anchor', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -207,7 +203,7 @@ $(document).ready(function() {
         $('body').removeClass("body-lock")
         $(this).parent().parent().removeClass("menu-is-open")
     })
-    ScrollReveal().reveal('.architecture-main__button-anchor', {
+    if ($(".architecture-main__button-anchor")) ScrollReveal().reveal('.architecture-main__button-anchor', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -224,7 +220,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.main-view__gray-line .gray-line', {
+    if ($(".main-view__gray-line .gray-line")) ScrollReveal().reveal('.main-view__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -241,7 +237,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.price-supervision__gray-line .gray-line', {
+    if ($(".price-supervision__gray-line .gray-line")) ScrollReveal().reveal('.price-supervision__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -258,7 +254,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.premium__gray-line .gray-line', {
+    if ($(".premium__gray-line .gray-line")) ScrollReveal().reveal('.premium__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -275,7 +271,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.design-main__gray-line .gray-line', {
+    if ($(".design-main__gray-line .gray-line")) ScrollReveal().reveal('.design-main__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -292,7 +288,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.design-components__gray-line .gray-line', {
+    if ($(".design-components__gray-line .gray-line")) ScrollReveal().reveal('.design-components__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -309,7 +305,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.about-section__gray-line .gray-line', {
+    if ($(".about-section__gray-line .gray-line")) ScrollReveal().reveal('.about-section__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -326,7 +322,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.prices__gray-line .gray-line', {
+    if ($(".prices__gray-line .gray-line")) ScrollReveal().reveal('.prices__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -343,7 +339,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.prices-design__gray-line .gray-line', {
+    if ($(".prices-design__gray-line .gray-line")) ScrollReveal().reveal('.prices-design__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -360,7 +356,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.project__gray-line .gray-line', {
+    if ($(".project__gray-line .gray-line")) ScrollReveal().reveal('.project__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -377,7 +373,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.complectation__gray-line .gray-line', {
+    if ($(".complectation__gray-line .gray-line")) ScrollReveal().reveal('.complectation__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -394,7 +390,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.price-assembly__gray-line .gray-line', {
+    if ($(".price-assembly__gray-line .gray-line")) ScrollReveal().reveal('.price-assembly__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -411,7 +407,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.vision-main__gray-line .gray-line', {
+    if ($(".vision-main__gray-line .gray-line")) ScrollReveal().reveal('.vision-main__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -428,7 +424,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.supervisors__gray-line .gray-line', {
+    if ($(".supervisors__gray-line .gray-line")) ScrollReveal().reveal('.supervisors__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -445,7 +441,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.architecture-main__gray-line .gray-line', {
+    if ($(".architecture-main__gray-line .gray-line")) ScrollReveal().reveal('.architecture-main__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -462,7 +458,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.steps-list__gray-line .gray-line', {
+    if ($(".steps-list__gray-line .gray-line")) ScrollReveal().reveal('.steps-list__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -479,7 +475,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.piter__gray-line .gray-line', {
+    if ($(".piter__gray-line .gray-line")) ScrollReveal().reveal('.piter__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -496,7 +492,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.steps__gray-line .gray-line', {
+    if ($(".steps__gray-line .gray-line")) ScrollReveal().reveal('.steps__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -513,7 +509,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.about-advantages__gray-line .gray-line', {
+    if ($(".about-advantages__gray-line .gray-line")) ScrollReveal().reveal('.about-advantages__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -530,7 +526,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.faq-list__gray-line .gray-line', {
+    if ($(".faq-list__gray-line .gray-line")) ScrollReveal().reveal('.faq-list__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -547,7 +543,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.about-advantages__item-wrapper', {
+    if ($(".about-advantages__item-wrapper")) ScrollReveal().reveal('.about-advantages__item-wrapper', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -564,7 +560,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.services-desc__gray-line .gray-line', {
+    if ($(".services-desc__gray-line .gray-line")) ScrollReveal().reveal('.services-desc__gray-line .gray-line', {
         reset: true,
         duration: 1000,
         opacity: 1,
@@ -581,7 +577,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.projects-swiper-slide__wrapper-a', {
+    if ($(".projects-swiper-slide__wrapper-a")) ScrollReveal().reveal('.projects-swiper-slide__wrapper-a', {
         reset: true,
         duration: 1000,
         distance: '100%',
@@ -593,7 +589,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.scale-into-view', {
+    if ($(".scale-into-view")) ScrollReveal().reveal('.scale-into-view', {
         reset: true,
         duration: 1000,
         scale: 1.2,
@@ -604,7 +600,7 @@ $(document).ready(function() {
             left: 0,
         }
     });
-    ScrollReveal().reveal('.piter__title', {
+    if ($(".piter__title")) ScrollReveal().reveal('.piter__title', {
         reset: true,
         duration: 1000,
         viewOffset: {
@@ -620,7 +616,7 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    ScrollReveal().reveal('.services-list__item', {
+    if ($(".services-list__item")) ScrollReveal().reveal('.services-list__item', {
         reset: true,
         duration: 1000,
         scale: 0,
