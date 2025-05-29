@@ -354,7 +354,26 @@ $vh: calc(100vh/700);
     font-size: 1rem;
     line-height: 1.4;
     margin-bottom: 1.6rem;
-    width: 11rem;
+    width: 12rem;
+    .row3 {
+      width: 11rem;
+    }
+  }
+
+  .piter.main .piter__middle {
+    margin-bottom: 1.6rem;
+  }
+
+  .specialists-swiper__navigation-animation {
+    width: 6.4rem;
+    .icon-arrow-left {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    .icon-arrow-right {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
   }
 
   .main-view__arrow-wrapper {
@@ -424,6 +443,17 @@ $vh: calc(100vh/700);
   .projects-top__sub-title {
     font-size: 1.6rem;
     line-height: 1.4;
+    width: 30rem;
+  }
+
+  .projects-swiper__navigation-animation {
+    width: 6.4rem;
+    justify-content: space-between;
+  }
+
+  .projects-swiper__navigation .icon-arrow-left, .projects-swiper__navigation .icon-arrow-right {
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
   .projects-top__spacer {
@@ -638,7 +668,7 @@ $vh: calc(100vh/700);
   }
 
   .projects-swiper__navigation {
-    bottom: $vh * 120;
+    bottom: 8rem;
     right: 1.6rem;
   }
 
@@ -646,8 +676,33 @@ $vh: calc(100vh/700);
     width: 100%;
   }
 
-  .intoAnimation .projects-swiper__navigation {
-    bottom: $vh * 120;
+  .projects-swiper-slide__bl-text {
+    position: absolute;
+    left: 1.6rem;
+    bottom: 8rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    z-index: 4;
+    color: $primary-light-color;
+  }
+
+  .dott {
+    background-color: $primary-light-color;
+    display: inline-block;
+    border-radius: 50%;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 1.6rem;
+    position: relative;
+    bottom: 0.4rem;
+  }
+
+  .upper {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-left: 0.2rem;
+    position: relative;
+    bottom: 0.7rem;
   }
 
   .isSelected .projects-swiper__navigation-animation {
@@ -957,6 +1012,13 @@ $vh: calc(100vh/700);
   .supervisors__type {
     font-size: 1rem;
     margin-bottom: 4rem;
+    line-height: 140%;
+    width: 100%;
+    margin-right: 0;
+  }
+  .piter.main .piter__left-text {
+    margin-bottom: 4rem;
+    padding-top: 4rem;
   }
   .supervisors__sub-title {
     font-size: 1.6rem;
@@ -1762,6 +1824,48 @@ $vh: calc(100vh/700);
     width: 100%;
     margin-bottom: 3.9rem;
   }
+  .result.main {
+    .result__left {
+      position: relative;
+    }
+    .result-swiper__navigation {
+      left: unset;
+      right: 0;
+      bottom: -0.4rem;
+    }
+  }
+  .feedback-form__wrapper .input-text::placeholder {
+    color: rgba(20, 14, 10, 1);
+  }
+  .feedback-form__err {
+    display: none;
+  }
+  .feedback__img img {
+    object-fit: cover;
+    object-position: center;
+  }
+  .contacts-block__link {
+    width: 6rem;
+    height: 6rem;
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+  .result-swiper__navigation {
+    width: 6.4rem;
+    .result-swiper__navigation-animation {
+      width: 6.4rem;
+    }
+    .icon-arrow-left {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    .icon-arrow-right {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
   .result__right {
     width: 100%;
     height: 30rem;
@@ -1840,19 +1944,52 @@ $vh: calc(100vh/700);
   }
   .footer__container {
     width: 36.1rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 8rem 0 4rem;
+    align-items: start;
   }
-  .footer__right {
-    display: none;
+  .feedback__content {
+    margin-bottom: 8rem;
+  }
+  .animation-slide-right__container:last-child {
+    margin-bottom: 0;
+  }
+  .footer__left {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .footer__middle {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+  .about-advantages.about {
+    .about-advantages__item-animation {
+      height: auto !important;
+    }
+    .about-advantages__item-wrapper {
+      height: auto;
+    }
+    .about-advantages__item-text {
+      font-size: 2rem;
+      width: 30rem;
+    }
   }
   .feedback__content {
     position: relative;
-    overflow: hidden;
   }
   .feedback-form .primary-button {
     right: 0.8rem;
   }
   .prices {
     min-height: 100vh;
+  }
+  .footer__right-button {
+    justify-content: flex-start;
+  }
+  .input-text {
+    font-size: 1.6rem;
   }
   .feedback-form {
     width: 36.1rem;
@@ -1939,7 +2076,8 @@ $vh: calc(100vh/700);
   }
   .about-section__content {
     padding-left: 1.6rem;
-    bottom: $vh * 60;
+    bottom: unset;
+    top: 20rem;
   }
   .about-section__title {
     font-size: 3.2rem;
@@ -1949,11 +2087,30 @@ $vh: calc(100vh/700);
   .about-section__gray-line {
     top: 4.1rem;
   }
+  .project__gray-line {
+    bottom: 6.4rem;
+  }
   .about-section__button-anchor {
     width: 19rem;
     height: 19rem;
     left: 19.7rem;
-    bottom: 6.4rem;
+    bottom: unset;
+    top: -11rem;
+  }
+  .project .projects-swiper-slide__bl-text {
+    bottom: 4rem;
+  }
+  .price-assembly.prices {
+    .price-assembly__description {
+      margin-bottom: 5.6rem;
+    }
+    .price-assembly__text1 {
+      font-size: 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+    .price-assembly__content {
+      padding-bottom: 10rem;
+    }
   }
   .about-section__text {
     width: 19.7rem;
@@ -1996,11 +2153,8 @@ $vh: calc(100vh/700);
     justify-content: flex-end;
   }
   .contacts-page__bg img {
-    width: 150rem !important;
+    width: 100vw !important;
     height: 100vh !important;
-    object-fit: cover !important;
-    object-position: center right !important;
-    margin-right: -79vh !important;
   }
   .contacts-page__content {
     width: 36.1rem;
@@ -2237,6 +2391,7 @@ $vh: calc(100vh/700);
   .project__content {
     left: 1.6rem;
     width: 36.1rem;
+    bottom: 30.5rem;
   }
   .project__title {
     font-size: 3.2rem;
@@ -2252,13 +2407,16 @@ $vh: calc(100vh/700);
     bottom: 17.111111vh;
   }
   .project__anchor {
-    bottom: 22.5vh;
+    bottom: 32.5rem;
   }
   .project__button-anchor {
     width: 19rem;
     height: 19rem;
     left: 19.7rem;
     bottom: 3.2rem;
+  }
+  .project-description__top-item.fr {
+    text-align: right;
   }
   .project-details__top {
     width: 36.1rem;
@@ -2347,12 +2505,24 @@ $vh: calc(100vh/700);
     height: auto;
     padding: 2rem 0;
   }
+  .project-description__top-text-upper {
+    font-size: 1rem;
+  }
   .project-description__top-item.year {
     position: absolute;
     right: 0;
-    bottom: 13rem;
+    bottom: 12rem;
     width: 15.2rem;
     border-right: 0 !important;
+  }
+  .preoject-description__button.left .price-supervision__button-anchor {
+    left: 1.6rem;
+  }
+  .project-gallery__text {
+    font-size: 1.6rem;
+  }
+  .project-description__text {
+    text-align: left;
   }
   .project-description__top-item.object {
     padding-left: 0;
