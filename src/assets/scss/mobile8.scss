@@ -1071,10 +1071,30 @@ $vh: calc(100vh/700);
   .supervisors__content-text-1 {
     margin-bottom: 2.4rem;
   }
+  .premium__top.main .primary-button {
+    left: 0;
+  }
+
+  .about-section__content.about {
+    top: unset;
+    bottom: 6rem;
+  }
+
+  .prices-design__price .upper {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    bottom: 0.4rem;
+  }
+
+  .prices-design__field:before {
+    width: 0.4rem;
+    height: 0.4rem;
+    top: 0.7rem;
+  }
 
   .supervisors__content-text .primary-button {
     position: absolute;
-    right: 0.6rem;
+    left: 0;
     bottom: -2.4rem;
   }
   .supervisors__scroll {

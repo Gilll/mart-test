@@ -2008,7 +2008,7 @@ input.input-text, textarea.input-text {
     transition: 0.3s;
     &:before {
       content: "";
-      min-width: 0.625rem;
+      width: 0.625rem;
       height: 0.625rem;
       background-color: rgba(20, 14, 10, 0.16);
       border-radius: 50%;
