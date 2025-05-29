@@ -1080,6 +1080,15 @@ $vh: calc(100vh/700);
     bottom: 6rem;
   }
 
+  .contacts-block__title {
+    font-size: 1.6rem;
+  }
+
+  .feedback__info-item:before {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
   .prices-design__price .upper {
     font-size: 1.4rem;
     line-height: 1.2;
@@ -2541,6 +2550,14 @@ $vh: calc(100vh/700);
   .project-gallery__text {
     font-size: 1.6rem;
   }
+  .project-gallery {
+    padding-bottom: 6rem;
+  }
+  .design-main__props span {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 0.5rem;
+  }
   .project-description__text {
     text-align: left;
   }
@@ -2980,9 +2997,10 @@ $vh: calc(100vh/700);
     height: 25rem;
   }
    .architecture .services-desc__col:last-child .services-desc__text {
-    height: 21rem;
+    height: auto;
     transition: 1s;
     overflow: hidden;
+     padding-bottom: 21rem;
   }
 
   .architecture .services-desc__img-wrapper {
@@ -3209,7 +3227,59 @@ $vh: calc(100vh/700);
   }
   .interiors-swiper-slide__content-title {
     font-size: 2rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.6rem;
+    font-family: 'Forum', serif;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .design-steps.compl {
+    .about-advantages__item-text {
+      font-size: 2rem;
+      line-height: 1;
+    }
+  }
+  .main-view__button-text-wrapper.row3.tt {
+    width: 13rem;
+  }
+  .interiors__content.compl {
+    padding-bottom: 8rem;
+    .interiors-swiper-slide {
+      height: auto;
+    }
+    .interiors-swiper-slide__item {
+      height: auto;
+    }
+  }
+  .services-desc.architecture {
+    .services-desc__img-wrapper {
+      margin-bottom: 2.4rem;
+    }
+    .services-desc__button-anchor {
+      bottom: 0;
+      right: unset;
+      left: 0;
+    }
+    .services-desc__text-wrapper.title {
+      font-size: 2rem;
+      line-height: 1;
+    }
+    .services-desc__list {
+      margin-top: 0.8rem;
+    }
+    .services-desc__list-item {
+      font-size: 1.6rem;
+    }
+    .services-desc__list-item:before {
+      width: 0.4rem;
+      height: 0.4rem;
+      top: 0.7rem;
+    }
+  }
+  .interiors-swiper-slide__content-text {
+    font-size: 1.6rem;
+  }
+  .interiors.design .result-swiper__navigation {
+    bottom: 6.2rem;
   }
   .interiors__top .result-swiper__navigation {
     right: unset;
