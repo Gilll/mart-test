@@ -968,7 +968,7 @@ $vh: calc(100vh/700);
 
   .mid-size .animation-button-height.show {
     height: 19rem;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
 
   .mid-size .round-button {
@@ -1497,13 +1497,16 @@ $vh: calc(100vh/700);
     width: 100%;
     transition: 1s;
   }
+  .footer__gray-line {
+    width: 100% !important;
+  }
   .intoAnimation .services-desc__gray-line {
     width: 100%;
     transition: 1s 1s;
   }
   .gray-line.show {
     width: 100%;
-    transition: 1s 0.5s;
+    transition: 1s 0s;
   }
   .specialists__content {
     width: 100%;
@@ -3495,6 +3498,41 @@ $vh: calc(100vh/700);
     overflow: hidden;
     box-sizing: border-box;
   }
+  .price-assembly.compl {
+    .price-assembly__text {
+      width: 100%;
+    }
+  }
+  .price-assembly_p-button {
+    padding: 2.2rem 0;
+    margin-top: 1.2rem;
+  }
+  .premium-service__text-slider {
+    .swiper-slide {
+      opacity: 0 !important;
+      transition: 0.3s !important;
+    }
+    .swiper-slide.swiper-slide-active {
+      opacity: 1 !important;
+      transition: 0.7s 0.3s !important;
+    }
+  }
+  .project-support .preoject-description__button {
+    height: 13rem;
+  }
+  .project-support .price-supervision__gray-line {
+    bottom: -3.4rem;
+  }
+  .project-support .price-supervision__button-anchor {
+    bottom: -7rem;
+  }
+  .project-support__top-text {
+    font-size: 2rem;
+    line-height: 1.28;
+  }
+  .services-desc.architecture .services-desc__bottom {
+    left: 0;
+  }
   .premium-service-slider {
     height: 33rem;
     .premium-service__img {
@@ -3692,7 +3730,40 @@ $vh: calc(100vh/700);
     flex-direction: column-reverse;
     align-items: start;
     position: unset;
-    margin-top: 14rem;
+    margin-top: 2.4rem;
+  }
+  .vision-alert__text {
+    margin-bottom: 8rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-align: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .about-advantages__item-text {
+    width: 29.5rem;
+  }
+  .premium-service.vision {
+    .swiper__navigation-box {
+      position: absolute;
+      bottom: 6rem;
+    }
+  }
+  .premium-service .preoject-description__button {
+    height: 18rem;
+    .main-view__button-text-wrapper {
+      height: 6rem;
+      top: 4rem;
+    }
+    .show.main-view__button-text {
+      height: 6rem;
+    }
+    .main-view__arrow-wrapper {
+      top: 10.4rem;
+    }
   }
   .vision-main__bottom-right {
     width: 100%;
@@ -3700,6 +3771,13 @@ $vh: calc(100vh/700);
   }
   .vision-main__bottom-text:last-child {
     display: none;
+  }
+  .vision-main__sub-title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    margin-top: 8rem;
   }
   .vision-main__bottom-text {
     width: 100%;

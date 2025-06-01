@@ -37,7 +37,7 @@
 
 .show.main-view__button-text {
   height: 4rem;
-  transition: 1s 1.2s ease-in-out;
+  transition: 1s 0.5s ease-in-out;
 }
 .show.main-view__button-text.row3 {
   height: 6rem;
@@ -45,7 +45,7 @@
 
 .show.main-view__arrow {
   height: 2.5rem;
-  transition: 1s 1.2s ease-in-out;
+  transition: 1s 0.5s ease-in-out;
 }
 
 .intoAnimation .section-bg img {

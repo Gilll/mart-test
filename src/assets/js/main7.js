@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     if ($(".slide-up-in-view")) ScrollReveal().reveal('.slide-up-in-view', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '100%',
         viewOffset: {
             top: 110,
@@ -51,7 +51,7 @@ $(document).ready(function() {
     });
     if ($(".slide-up-in-view100")) ScrollReveal().reveal('.slide-up-in-view100', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '100%',
         viewOffset: {
             top: 150,
@@ -62,7 +62,7 @@ $(document).ready(function() {
     });
     if ($(".slide-up-in-view150")) ScrollReveal().reveal('.slide-up-in-view150', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '100%',
         viewOffset: {
             top: 200,
@@ -73,7 +73,7 @@ $(document).ready(function() {
     });
     if ($(".slide-up-in-view0")) ScrollReveal().reveal('.slide-up-in-view0', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '100%',
         viewOffset: {
             top: 110,
@@ -84,7 +84,7 @@ $(document).ready(function() {
     });
     if ($(".slide-down-in-view")) ScrollReveal().reveal('.slide-down-in-view', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '-100%',
         viewOffset: {
             top: 110,
@@ -95,7 +95,7 @@ $(document).ready(function() {
     });
     if ($(".slide-down-in-view150")) ScrollReveal().reveal('.slide-down-in-view150', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '-100%',
         viewOffset: {
             top: 180,
@@ -106,7 +106,7 @@ $(document).ready(function() {
     });
     if ($(".slide-down-in-view100")) ScrollReveal().reveal('.slide-down-in-view100', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '-100%',
         viewOffset: {
             top: 150,
@@ -117,7 +117,7 @@ $(document).ready(function() {
     });
     if ($(".slide-left-in-view")) ScrollReveal().reveal('.slide-left-in-view', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '-100%',
         origin: 'left',
         viewOffset: {
@@ -129,7 +129,7 @@ $(document).ready(function() {
     });
     if ($(".animation-height")) ScrollReveal().reveal('.animation-height', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 60,
@@ -146,7 +146,7 @@ $(document).ready(function() {
     });
     if ($(".main-view__button-text")) ScrollReveal().reveal('.main-view__button-text', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 150,
@@ -163,7 +163,7 @@ $(document).ready(function() {
     });
     if ($(".main-view__arrow")) ScrollReveal().reveal('.main-view__arrow', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 135,
@@ -180,7 +180,7 @@ $(document).ready(function() {
     });
     if ($(".primary-button__circle-anchor")) ScrollReveal().reveal('.primary-button__circle-anchor', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 110,
@@ -205,7 +205,7 @@ $(document).ready(function() {
     })
     if ($(".architecture-main__button-anchor")) ScrollReveal().reveal('.architecture-main__button-anchor', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 200,
@@ -222,7 +222,7 @@ $(document).ready(function() {
     });
     if ($(".main-view__gray-line .gray-line")) ScrollReveal().reveal('.main-view__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 170,
@@ -239,7 +239,7 @@ $(document).ready(function() {
     });
     if ($(".price-supervision__gray-line .gray-line")) ScrollReveal().reveal('.price-supervision__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 170,
@@ -256,7 +256,7 @@ $(document).ready(function() {
     });
     if ($(".premium__gray-line .gray-line")) ScrollReveal().reveal('.premium__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 170,
@@ -273,7 +273,7 @@ $(document).ready(function() {
     });
     if ($(".design-main__gray-line .gray-line")) ScrollReveal().reveal('.design-main__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 170,
@@ -290,7 +290,7 @@ $(document).ready(function() {
     });
     if ($(".design-components__gray-line .gray-line")) ScrollReveal().reveal('.design-components__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -307,7 +307,7 @@ $(document).ready(function() {
     });
     if ($(".about-section__gray-line .gray-line")) ScrollReveal().reveal('.about-section__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -324,7 +324,7 @@ $(document).ready(function() {
     });
     if ($(".prices__gray-line .gray-line")) ScrollReveal().reveal('.prices__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -341,7 +341,7 @@ $(document).ready(function() {
     });
     if ($(".prices-design__gray-line .gray-line")) ScrollReveal().reveal('.prices-design__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -358,7 +358,7 @@ $(document).ready(function() {
     });
     if ($(".project__gray-line .gray-line")) ScrollReveal().reveal('.project__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -375,7 +375,7 @@ $(document).ready(function() {
     });
     if ($(".complectation__gray-line .gray-line")) ScrollReveal().reveal('.complectation__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -392,7 +392,7 @@ $(document).ready(function() {
     });
     if ($(".price-assembly__gray-line .gray-line")) ScrollReveal().reveal('.price-assembly__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -409,7 +409,7 @@ $(document).ready(function() {
     });
     if ($(".vision-main__gray-line .gray-line")) ScrollReveal().reveal('.vision-main__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 70,
@@ -426,7 +426,7 @@ $(document).ready(function() {
     });
     if ($(".supervisors__gray-line .gray-line")) ScrollReveal().reveal('.supervisors__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 120,
@@ -443,7 +443,7 @@ $(document).ready(function() {
     });
     if ($(".architecture-main__gray-line .gray-line")) ScrollReveal().reveal('.architecture-main__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 120,
@@ -460,7 +460,7 @@ $(document).ready(function() {
     });
     if ($(".steps-list__gray-line .gray-line")) ScrollReveal().reveal('.steps-list__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 60,
@@ -477,7 +477,7 @@ $(document).ready(function() {
     });
     if ($(".piter__gray-line .gray-line")) ScrollReveal().reveal('.piter__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 60,
@@ -492,43 +492,47 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    if ($(".steps__gray-line .gray-line")) ScrollReveal().reveal('.steps__gray-line .gray-line', {
-        reset: true,
-        duration: 1000,
-        opacity: 1,
-        viewOffset: {
-            top: 40,
-            right: 0,
-            bottom: 80,
-            left: 0,
-        },
-        beforeReveal: function (el) {
-            el.classList.add("show")
-        },
-        beforeReset: function (el) {
-            el.classList.remove("show")
-        },
-    });
-    if ($(".about-advantages__gray-line .gray-line")) ScrollReveal().reveal('.about-advantages__gray-line .gray-line', {
-        reset: true,
-        duration: 1000,
-        opacity: 1,
-        viewOffset: {
-            top: 90,
-            right: 0,
-            bottom: 50,
-            left: 0,
-        },
-        beforeReveal: function (el) {
-            el.classList.add("show")
-        },
-        beforeReset: function (el) {
-            el.classList.remove("show")
-        },
-    });
+    if ($(".steps__gray-line .gray-line")) {
+        ScrollReveal().reveal('.steps__gray-line .gray-line', {
+            reset: true,
+            duration: 500,
+            opacity: 1,
+            viewOffset: {
+                top: 40,
+                right: 0,
+                bottom: 80,
+                left: 0,
+            },
+            beforeReveal: function (el) {
+                el.classList.add("show")
+            },
+            beforeReset: function (el) {
+                el.classList.remove("show")
+            },
+        });
+    }
+    if ($(".about-advantages__gray-line .gray-line")) {
+        ScrollReveal().reveal('.about-advantages__gray-line .gray-line', {
+            reset: true,
+            duration: 500,
+            opacity: 1,
+            viewOffset: {
+                top: 90,
+                right: 0,
+                bottom: 50,
+                left: 0,
+            },
+            beforeReveal: function (el) {
+                el.classList.add("show")
+            },
+            beforeReset: function (el) {
+                el.classList.remove("show")
+            },
+        });
+    }
     if ($(".faq-list__gray-line .gray-line")) ScrollReveal().reveal('.faq-list__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 90,
@@ -545,7 +549,7 @@ $(document).ready(function() {
     });
     if ($(".about-advantages__item-wrapper")) ScrollReveal().reveal('.about-advantages__item-wrapper', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 90,
@@ -562,7 +566,7 @@ $(document).ready(function() {
     });
     if ($(".services-desc__gray-line .gray-line")) ScrollReveal().reveal('.services-desc__gray-line .gray-line', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         opacity: 1,
         viewOffset: {
             top: 200,
@@ -579,7 +583,7 @@ $(document).ready(function() {
     });
     if ($(".projects-swiper-slide__wrapper-a")) ScrollReveal().reveal('.projects-swiper-slide__wrapper-a', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         distance: '100%',
         scale: 1.2,
         viewOffset: {
@@ -591,7 +595,7 @@ $(document).ready(function() {
     });
     if ($(".scale-into-view")) ScrollReveal().reveal('.scale-into-view', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         scale: 1.2,
         viewOffset: {
             top: 100,
@@ -602,7 +606,7 @@ $(document).ready(function() {
     });
     if ($(".piter__title")) ScrollReveal().reveal('.piter__title', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         viewOffset: {
             top: 200,
             right: 0,
@@ -618,7 +622,7 @@ $(document).ready(function() {
     });
     if ($(".services-list__item")) ScrollReveal().reveal('.services-list__item', {
         reset: true,
-        duration: 1000,
+        duration: 500,
         scale: 0,
         viewOffset: {
             top: 100,
@@ -732,10 +736,20 @@ $(document).ready(function() {
             }
         });
     }
-    if ($(".premium-service-slider")) {
+    if ($(".premium-service-slider") && $(".premium-service__text-slider")) {
+        const swiper2 = new Swiper('.premium-service__text-slider', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            //effect: 'creative',
+            //allowTouchMove: false,
+            effect: 'fade',
+            //creativeEffect: {},
+            speed: 1000
+        });
         const swiper = new Swiper('.premium-service-slider', {
             direction: 'horizontal',
-            loop: false,
+            loop: true,
             slidesPerView: 1.9,
             //effect: 'creative',
             autoplay: {
@@ -748,7 +762,10 @@ $(document).ready(function() {
             navigation: {
                 nextEl: '.premium-service-swiper__next',
                 prevEl: '.premium-service-swiper__prev',
-            }
+            },
+            thumbs: {
+                swiper: swiper2,
+            },
         });
     }
     if ($(".specialists-swiper--row")) {

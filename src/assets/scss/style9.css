@@ -531,7 +531,7 @@ section.main-view {
 }
 .services-desc__list-item:before {
   content: "";
-  min-width: 0.625rem;
+  width: 0.625rem;
   height: 0.625rem;
   background-color: rgba(20, 14, 10, 0.16);
   display: inline-block;
