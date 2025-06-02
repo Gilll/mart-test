@@ -3755,6 +3755,7 @@ $vh: calc(100vh/700);
     .swiper__navigation-box {
       position: absolute;
       bottom: 6rem;
+      z-index: 5;
     }
   }
   .premium-service .preoject-description__button {
