@@ -639,7 +639,7 @@ section.main-view {
 
 .services-desc__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .services-desc__img-animation {
@@ -850,7 +850,7 @@ section.main-view {
 
 .intoAnimation .services__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .services-list {
@@ -940,7 +940,7 @@ section.main-view {
 
 .intoAnimation .specialists__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .specialists-swiper {
@@ -1112,7 +1112,7 @@ section.main-view {
 
 .intoAnimation.animation-state-0 .premium__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation.animation-state-1 .premium__gray-line {
@@ -1405,12 +1405,12 @@ section.main-view {
 
 .intoAnimation .piter__left-img img {
   transform: scale(1);
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .piter__middle img {
   transform: scale(1);
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .piter__gray-line {
@@ -1919,7 +1919,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .prices__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .prices__bg {
@@ -2255,7 +2255,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .price-supervision__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .price-assembly__scroll {
@@ -2330,7 +2330,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .price-assembly__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .projects-top.project-page .projects-top__content {
@@ -2417,7 +2417,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .project__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .project__bg img {
@@ -2815,7 +2815,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .about-section__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .about-advantages__scroll {
@@ -3008,7 +3008,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .contacts-page__content-item-animation {
   transform: translateY(0);
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation.animation-state-1 .contacts-page__bg-animation {
@@ -3062,7 +3062,7 @@ input.input-text, textarea.input-text {
 
 .contacts.intoAnimation.animation-state-1 .footer__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .contacts.intoAnimation.animation-state-0 .footer .animation-slide-up {
@@ -3175,7 +3175,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .design-main__gray-line {
   width: 100vw;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .design-main__bg-animation {
@@ -3251,7 +3251,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .design-steps__img-animation {
   height: 65rem;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .design-components__scroll {
@@ -3421,7 +3421,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .faq__right-animation {
   width: 84.2rem;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .faq__img-animation {
@@ -3577,7 +3577,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .complectation__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .complectation__bg-animation {
@@ -3813,7 +3813,7 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .architecture-main__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .project-support__scroll {
@@ -3899,12 +3899,12 @@ input.input-text, textarea.input-text {
 
 .intoAnimation .project-support__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .vision-main__gray-line {
   width: 100%;
-  transition: 1s 1s;
+  transition: 1s 0s;
 }
 
 .intoAnimation .project-support__gray-line-vertical {
@@ -3912,4 +3912,4 @@ input.input-text, textarea.input-text {
   transition: 1s 1.5s;
 }
 
-/*# sourceMappingURL=style9.css.map */
+/*# sourceMappingURL=style10.css.map */

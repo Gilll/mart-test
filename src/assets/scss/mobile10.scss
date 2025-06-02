@@ -127,7 +127,7 @@ $vh: calc(100vh/700);
 
   .menu-is-open .mobile-menu__gray-line {
     width: 100%;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
 
   .menu-is-open .animation-button-height {
@@ -137,7 +137,7 @@ $vh: calc(100vh/700);
 
   .menu-is-open .header__menu li {
     transform: translateX(0);
-    transition: 1s 1s;
+    transition: 1s 0s;
     &:nth-child(2) {
       transition: 1s 1.1s;
     }
@@ -213,9 +213,9 @@ $vh: calc(100vh/700);
     width: 19rem;
   }
 
-  .show.animation-button-height {
+  .show .animation-button-height {
     height: 19rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
 
   .round-button:hover {
@@ -733,7 +733,7 @@ $vh: calc(100vh/700);
   .fixed-block .white-cross div {
     transform: rotate(45deg);
     opacity: 1;
-    transition: 1s 1s;
+    transition: 1s 0s;
     &:last-child {
       transform: rotate(-45deg);
     }
@@ -1178,7 +1178,7 @@ $vh: calc(100vh/700);
   }
   .intoAnimation .about-advantages__img-animation {
     height: 48.9rem;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .steps-list__title {
     display: none;
@@ -1502,7 +1502,7 @@ $vh: calc(100vh/700);
   }
   .intoAnimation .services-desc__gray-line {
     width: 100%;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .gray-line.show {
     width: 100%;
@@ -1979,7 +1979,7 @@ $vh: calc(100vh/700);
     justify-content: flex-start;
     flex-direction: column;
     height: auto;
-    padding: 8rem 0 4rem;
+    padding: 8rem 0;
     align-items: start;
   }
   .feedback__content {
@@ -3309,7 +3309,7 @@ $vh: calc(100vh/700);
     .main-view__arrow-wrapper {
       top: 10.4rem;
     }
-    .show.main-view__button-text {
+    .show .main-view__button-text {
       height: 6rem;
     }
   }
@@ -3758,7 +3758,7 @@ $vh: calc(100vh/700);
       height: 6rem;
       top: 4rem;
     }
-    .show.main-view__button-text {
+    .show .main-view__button-text {
       height: 6rem;
     }
     .main-view__arrow-wrapper {
@@ -3813,7 +3813,7 @@ $vh: calc(100vh/700);
   }
   .projects.fullscreen .projects-swiper-slide__button-anchor .animation-button-height {
     height: 19rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .projects .projects-swiper-slide__button-anchor .main-view__arrow {
     height: 0 !important;
@@ -3821,7 +3821,7 @@ $vh: calc(100vh/700);
   }
   .projects.fullscreen .projects-swiper-slide__button-anchor .main-view__arrow {
     height: 1.7rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .projects .projects-swiper-slide__button-anchor .main-view__button-text {
     height: 0 !important;
@@ -3829,7 +3829,7 @@ $vh: calc(100vh/700);
   }
   .projects.fullscreen .projects-swiper-slide__button-anchor .main-view__button-text {
     height: 4rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .projects.fullscreen .projects__button-anchor .animation-button-height {
     height: 0 !important;

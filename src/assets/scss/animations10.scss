@@ -39,7 +39,7 @@ $vh: calc(100vh/900);
   transition: width 1s 2s ease-in-out;
 }
 
-.show.main-view__button-text {
+.show .main-view__button-text {
   height: 4rem;
   transition: 1s 0.5s ease-in-out;
   &.row3 {
@@ -47,7 +47,7 @@ $vh: calc(100vh/900);
   }
 }
 
-.show.main-view__arrow {
+.show .main-view__arrow {
   height: 2.5rem;
   transition: 1s 0.5s ease-in-out;
 }

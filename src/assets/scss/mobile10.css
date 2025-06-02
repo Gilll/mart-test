@@ -107,7 +107,7 @@
   }
   .menu-is-open .mobile-menu__gray-line {
     width: 100%;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .menu-is-open .animation-button-height {
     height: 19rem;
@@ -115,7 +115,7 @@
   }
   .menu-is-open .header__menu li {
     transform: translateX(0);
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .menu-is-open .header__menu li:nth-child(2) {
     transition: 1s 1.1s;
@@ -182,9 +182,9 @@
   .animation-button-height {
     width: 19rem;
   }
-  .show.animation-button-height {
+  .show .animation-button-height {
     height: 19rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .round-button:hover {
     margin-top: 0.5rem;
@@ -626,7 +626,7 @@
   .fixed-block .white-cross div {
     transform: rotate(45deg);
     opacity: 1;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .fixed-block .white-cross div:last-child {
     transform: rotate(-45deg);
@@ -1031,7 +1031,7 @@
   }
   .intoAnimation .about-advantages__img-animation {
     height: 48.9rem;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .steps-list__title {
     display: none;
@@ -1340,7 +1340,7 @@
   }
   .intoAnimation .services-desc__gray-line {
     width: 100%;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .gray-line.show {
     width: 100%;
@@ -1808,7 +1808,7 @@
     justify-content: flex-start;
     flex-direction: column;
     height: auto;
-    padding: 8rem 0 4rem;
+    padding: 8rem 0;
     align-items: start;
   }
   .feedback__content {
@@ -3106,7 +3106,7 @@
   .interiors.design .main-view__arrow-wrapper, .services .main-view__arrow-wrapper {
     top: 10.4rem;
   }
-  .interiors.design .show.main-view__button-text, .services .show.main-view__button-text {
+  .interiors.design .show .main-view__button-text, .services .show .main-view__button-text {
     height: 6rem;
   }
   .result-swiper__navigation {
@@ -3539,7 +3539,7 @@
     height: 6rem;
     top: 4rem;
   }
-  .premium-service .preoject-description__button .show.main-view__button-text {
+  .premium-service .preoject-description__button .show .main-view__button-text {
     height: 6rem;
   }
   .premium-service .preoject-description__button .main-view__arrow-wrapper {
@@ -3593,7 +3593,7 @@
   }
   .projects.fullscreen .projects-swiper-slide__button-anchor .animation-button-height {
     height: 19rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .projects .projects-swiper-slide__button-anchor .main-view__arrow {
     height: 0 !important;
@@ -3601,7 +3601,7 @@
   }
   .projects.fullscreen .projects-swiper-slide__button-anchor .main-view__arrow {
     height: 1.7rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .projects .projects-swiper-slide__button-anchor .main-view__button-text {
     height: 0 !important;
@@ -3609,7 +3609,7 @@
   }
   .projects.fullscreen .projects-swiper-slide__button-anchor .main-view__button-text {
     height: 4rem !important;
-    transition: 1s 1s;
+    transition: 1s 0s;
   }
   .projects.fullscreen .projects__button-anchor .animation-button-height {
     height: 0 !important;
@@ -3637,4 +3637,4 @@
   }
 }
 
-/*# sourceMappingURL=mobile9.css.map */
+/*# sourceMappingURL=mobile10.css.map */

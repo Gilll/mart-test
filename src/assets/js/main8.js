@@ -144,31 +144,14 @@ $(document).ready(function() {
             el.classList.remove("show")
         },
     });
-    if ($(".main-view__button-text")) ScrollReveal().reveal('.main-view__button-text', {
+    if ($(".button-animation")) ScrollReveal().reveal('.button-animation', {
         reset: true,
         duration: 500,
         opacity: 1,
         viewOffset: {
-            top: 150,
+            top: 40,
             right: 0,
-            bottom: 0,
-            left: 0,
-        },
-        beforeReveal: function (el) {
-            el.classList.add("show")
-        },
-        beforeReset: function (el) {
-            el.classList.remove("show")
-        },
-    });
-    if ($(".main-view__arrow")) ScrollReveal().reveal('.main-view__arrow', {
-        reset: true,
-        duration: 500,
-        opacity: 1,
-        viewOffset: {
-            top: 135,
-            right: 0,
-            bottom: 0,
+            bottom: 40,
             left: 0,
         },
         beforeReveal: function (el) {
@@ -203,23 +186,6 @@ $(document).ready(function() {
         $('body').removeClass("body-lock")
         $(this).parent().parent().removeClass("menu-is-open")
     })
-    if ($(".architecture-main__button-anchor")) ScrollReveal().reveal('.architecture-main__button-anchor', {
-        reset: true,
-        duration: 500,
-        opacity: 1,
-        viewOffset: {
-            top: 200,
-            right: 0,
-            bottom: 100,
-            left: 0,
-        },
-        beforeReveal: function (el) {
-            el.classList.add("show")
-        },
-        beforeReset: function (el) {
-            el.classList.remove("show")
-        },
-    });
     if ($(".main-view__gray-line .gray-line")) ScrollReveal().reveal('.main-view__gray-line .gray-line', {
         reset: true,
         duration: 500,
@@ -501,6 +467,25 @@ $(document).ready(function() {
                 top: 40,
                 right: 0,
                 bottom: 80,
+                left: 0,
+            },
+            beforeReveal: function (el) {
+                el.classList.add("show")
+            },
+            beforeReset: function (el) {
+                el.classList.remove("show")
+            },
+        });
+    }
+    if ($(".main-view__button-anchor")) {
+        ScrollReveal().reveal('.main-view__button-anchor', {
+            reset: true,
+            duration: 500,
+            opacity: 1,
+            viewOffset: {
+                top: 40,
+                right: 0,
+                bottom: 40,
                 left: 0,
             },
             beforeReveal: function (el) {

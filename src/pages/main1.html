@@ -6,9 +6,9 @@
     <title>MART</title>
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/set.css">
-    <link rel="stylesheet" href="../assets/scss/style9.css">
-    <link rel="stylesheet" href="../assets/scss/animations9.css">
-    <link rel="stylesheet" href="../assets/scss/mobile9.css">
+    <link rel="stylesheet" href="../assets/scss/style10.css">
+    <link rel="stylesheet" href="../assets/scss/animations10.css">
+    <link rel="stylesheet" href="../assets/scss/mobile10.css">
     <link rel="stylesheet" href="../assets/css/swiper.css">
     <link rel="stylesheet" href="../assets/css/pageable.css">
 </head>
@@ -61,7 +61,7 @@
              <div class="mobile-menu__phone"><div>+7 963 77 9999 2</div></div>
              <div class="mobile-menu__city"><div>Санкт-Петербург</div></div>
              <div class="mobile-menu__gray-line"></div>
-             <div class="mobile-menu__button-anchor black-button">
+             <div class="mobile-menu__button-anchor button-animation black-button">
                  <div class="main-view__button-text-wrapper">
                      <div class="main-view__button-text">оставить<br/>заявку</div>
                  </div>
@@ -92,6 +92,123 @@
              </svg>
          </div>
      </div>
+     <div class="modal-wrapper">
+         <div id="feedback-modal" class="modal-box">
+             <div class="mob-cross">
+                 <div class="mob-cross-line"></div>
+                 <div class="mob-cross-line"></div>
+             </div>
+             <div class="modal-form col">
+                 <div class="modal-content">
+                     <div class="feedback-modal__title">
+                         Оставьте свои<br>
+                         контакты<br>
+                         для связи
+                     </div>
+                     <div class="feedback-modal__form">
+                         <input class="input-text" type="text" name="name" placeholder="Вашу имя" autocomplete="off">
+                         <input class="input-text" type="text" name="phone" placeholder="+7 ( ___ ) ___ - __ - __" autocomplete="off">
+                         <input class="input-text" type="text" name="comment" placeholder="Комментарий" autocomplete="off">
+                     </div>
+                     <span id="send-request" class="primary-button">
+                             <div class="slide-up-in-view__container">
+                                 <div class="primary-button__text duration-1">
+                                     <div class="primary-button__text-animation">отправить заявку</div>
+                                 </div>
+                             </div>
+                             <div class="primary-button__circle-anchor show">
+                                 <div class="primary-button__circle-animation">
+                                     <div class="primary-button__circle"></div>
+                                 </div>
+                             </div>
+                             <div class="slide-up-in-view__container">
+                                 <div class="primary-button__arrow duration-1 ">
+                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                     </svg>
+                                 </div>
+                             </div>
+                         </span>
+
+                 </div>
+                 <div class="modal-content__bottom">
+                     <img src="../assets/images/modal.png" alt="">
+                 </div>
+             </div>
+             <div class="modal-finish">
+                 <div class="feedback-modal__title">
+                     спасибо за заявку!
+                 </div>
+                 <div class="feedback-modal__text">
+                     Форма успешно отправлена,<br>
+                     наш менеджер свяжется с Вами в течение часа!
+                 </div>
+                 <div class="modal-content__bottom">
+                     <img src="../assets/images/modal2.png" alt="">
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="modal-wrapper">
+         <div id="request-call-modal" class="modal-box">
+             <div class="mob-cross">
+                 <div class="mob-cross-line"></div>
+                 <div class="mob-cross-line"></div>
+             </div>
+             <div class="modal-form">
+                 <div class="modal-content">
+                     <div class="feedback-modal__title">
+                         закажите звонок<br>
+                         в удобное для вас время
+                     </div>
+                     <div class="feedback-modal__form">
+                         <input class="input-text" type="text" name="name" placeholder="Вашу имя" autocomplete="off">
+                         <input class="input-text" type="text" name="phone" placeholder="+7 ( ___ ) ___ - __ - __" autocomplete="off">
+                     </div>
+                     <div class="time-picker">
+                         <div class="time-picker__title">Выберите удобное время</div>
+                         <input type="hidden" value="14:00 - 15:00">
+                         <div class="time-picker-list">
+                             <div class="time-picker-item">11:00 - 12:00</div>
+                             <div class="time-picker-item">12:00 - 13:00</div>
+                             <div class="time-picker-item">13:00 - 14:00</div>
+                             <div class="time-picker-item active">14:00 - 15:00</div>
+                             <div class="time-picker-item">15:00 - 16:00</div>
+                             <div class="time-picker-item">16:00 - 17:00</div>
+                             <div class="time-picker-item">17:00 - 18:00</div>
+                             <div class="time-picker-item">18:00 - 19:00</div>
+                             <div class="time-picker-item">19:00 - 20:00</div>
+                         </div>
+                     </div>
+                     <span class="primary-button">
+                             <div class="slide-up-in-view__container">
+                                 <div class="primary-button__text duration-1">
+                                     <div class="primary-button__text-animation">заказать звонок</div>
+                                 </div>
+                             </div>modal-form
+                             <div class="primary-button__circle-anchor show">
+                                 <div class="primary-button__circle-animation">
+                                     <div class="primary-button__circle"></div>
+                                 </div>
+                             </div>
+                             <div class="slide-up-in-view__container">
+                                 <div class="primary-button__arrow duration-1 " >
+                                     <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                         <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                         <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                     </svg>
+                                 </div>
+                             </div>
+                         </span>
+                     <div class="modal-form__desc">
+                         Отправляя форму, вы принимаете<br> пользовательское соглашение
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+     </div>
      <div id="container">
          <div data-anchor="custom-design" class="mb-8 white-header giga-white-header fade-in">
              <section class="main-view">
@@ -100,7 +217,7 @@
                  </div>
                  <div class="main-view__top-holder"></div>
                  <div class="section-container main-view__container">
-                     <div class="main-view__button-anchor">
+                     <div class="main-view__button-anchor button-animation">
                          <div class="main-view__button-text-wrapper">
                              <div class="main-view__button-text">оставить<br/>заявку</div>
                          </div>
@@ -112,7 +229,7 @@
                                  </svg>
                              </div>
                          </div>
-                         <div class="animation-button-height animation-height">
+                         <div class="animation-button-height">
                              <div call-modal="feedback-modal" class="round-button"></div>
                          </div>
                      </div>
@@ -200,7 +317,7 @@
                                      <div class="projects-swiper-slide__bl-text">2021<span class="dott"></span>55 М<span class="upper">2</span></div>
 
                                      <div class="projects-swiper-slide__content">
-                                         <div class="projects-swiper-slide__button-anchor">
+                                         <div class="projects-swiper-slide__button-anchor button-animation">
                                              <div class="main-view__button-text-wrapper">
                                                  <div class="main-view__button-text">смотреть<br>проект</div>
                                              </div>
@@ -233,7 +350,7 @@
                                  </div>
                                  <div class="swiper-slide">
                                      <div class="projects-swiper-slide__content">
-                                         <div class="projects-swiper-slide__button-anchor">
+                                         <div class="projects-swiper-slide__button-anchor button-animation">
                                              <div class="main-view__button-text-wrapper">
                                                  <div class="main-view__button-text">оставить<br>заявку</div>
                                              </div>
@@ -267,7 +384,7 @@
                                  </div>
                                  <div class="swiper-slide">
                                      <div class="projects-swiper-slide__content">
-                                         <div class="projects-swiper-slide__button-anchor">
+                                         <div class="projects-swiper-slide__button-anchor button-animation">
                                              <div class="main-view__button-text-wrapper">
                                                  <div class="main-view__button-text">смотреть<br>проект</div>
                                              </div>
@@ -300,7 +417,7 @@
                                  </div>
                                  <div class="swiper-slide">
                                      <div class="projects-swiper-slide__content">
-                                         <div class="projects-swiper-slide__button-anchor">
+                                         <div class="projects-swiper-slide__button-anchor button-animation">
                                              <div class="main-view__button-text-wrapper">
                                                  <div class="main-view__button-text">смотреть<br>проект</div>
                                              </div>
@@ -333,7 +450,7 @@
                                  </div>
                                  <div class="swiper-slide">
                                      <div class="projects-swiper-slide__content">
-                                         <div class="projects-swiper-slide__button-anchor">
+                                         <div class="projects-swiper-slide__button-anchor button-animation">
                                              <div class="main-view__button-text-wrapper">
                                                  <div class="main-view__button-text">смотреть<br>проект</div>
                                              </div>
@@ -393,7 +510,7 @@
             <section class="supervisors">
                 <div class="supervisors__scroll">
                     <div class="supervisors__top">
-                        <div class="supervisors__button-anchor black-button mid-size">
+                        <div class="supervisors__button-anchor button-animation black-button mid-size">
                             <div class="main-view__button-text-wrapper">
                                 <div class="main-view__button-text">связаться<br>с руководителем</div>
                             </div>
@@ -405,7 +522,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="animation-button-height animation-height">
+                            <div class="animation-button-height">
                                 <div call-modal="request-call-modal" class="round-button"></div>
                             </div>
                         </div>
@@ -654,7 +771,7 @@
                                                  </div>
                                              </div>
                                          </div>
-                                         <div class="services-desc__button-anchor black-button mid-size">
+                                         <div class="services-desc__button-anchor button-animation black-button mid-size">
                                              <div class="main-view__button-text-wrapper">
                                                  <div class="main-view__button-text">наше<br>портфолио</div>
                                              </div>
@@ -666,7 +783,7 @@
                                                      </svg>
                                                  </div>
                                              </div>
-                                             <div class="animation-button-height animation-height">
+                                             <div class="animation-button-height">
                                                  <div class="round-button"></div>
                                              </div>
                                          </div>
@@ -702,7 +819,7 @@
                                  </div>
                              </div>
                              <div class="specialists__top">
-                                 <div class="specialists__button-anchor black-button mid-size">
+                                 <div class="specialists__button-anchor button-animation black-button mid-size">
                                      <div class="main-view__button-text-wrapper">
                                          <div class="main-view__button-text row3">
                                              закажите звонок<br>
@@ -718,7 +835,7 @@
                                              </svg>
                                          </div>
                                      </div>
-                                     <div class="animation-button-height animation-height">
+                                     <div class="animation-button-height">
                                          <div class="round-button"></div>
                                      </div>
                                  </div>
@@ -851,7 +968,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="premium__button-anchor">
+                 <div class="premium__button-anchor button-animation">
                      <div class="premium__gray-line"><div class="gray-line"></div></div>
                      <div id="play-video" class="premium__button">
                          <div class="main-view__button-text-wrapper">
@@ -865,7 +982,7 @@
                                  </svg>
                              </div>
                          </div>
-                         <div class="animation-button-height animation-height">
+                         <div class="animation-button-height">
                              <div class="round-button"></div>
                          </div>
                      </div>
@@ -892,7 +1009,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="steps__button-anchor black-button mid-size">
+                            <div class="steps__button-anchor button-animation black-button mid-size">
                                 <div class="main-view__button-text-wrapper">
                                     <div class="main-view__button-text">перейти<br>в услуги</div>
                                 </div>
@@ -904,7 +1021,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="animation-button-height animation-height">
+                                <div class="animation-button-height">
                                     <div class="round-button"></div>
                                 </div>
                             </div>
@@ -1046,7 +1163,7 @@
                      <div class="piter__container">
                          <div class="piter__gray-line"><div class="gray-line"></div></div>
                          <div class="piter__content">
-                             <div class="piter__button-anchor black-button mid-size">
+                             <div class="piter__button-anchor button-animation black-button mid-size">
                                  <div class="main-view__button-text-wrapper">
                                      <div class="main-view__button-text">оставить<br>заявку</div>
                                  </div>
@@ -1058,7 +1175,7 @@
                                          </svg>
                                      </div>
                                  </div>
-                                 <div class="animation-button-height animation-height">
+                                 <div class="animation-button-height">
                                      <div class="round-button"></div>
                                  </div>
                              </div>
@@ -1378,25 +1495,25 @@
                          <div class="footer__container">
                              <div class="footer__left">
                                  <div class="slide-up-in-view__container">
-                                     <div class="slide-up-in-view0 duration-1">
+                                     <div class="duration-1">
                                          <a href="#">Политика конфиденциальности</a>
                                      </div>
                                  </div>
                              </div>
                              <div class="footer__middle">
                                  <div class="slide-up-in-view__container">
-                                     <div class="slide-up-in-view0 duration-1">
+                                     <div class="duration-1">
                                          © 2014-2025
                                      </div>
                                  </div>
                              </div>
                              <div class="footer__right">
                                  <div class="slide-up-in-view__container">
-                                     <div class="slide-up-in-view0 duration-1">
+                                     <div class="duration-1">
                                          <div class="footer__right-button">
                                             <a href="#" class="primary-button">
                                              <div class="slide-up-in-view__container">
-                                                 <div class="primary-button__text slide-up-in-view duration-1">
+                                                 <div class="primary-button__text duration-1">
                                                      <div class="primary-button__text-animation">заявка на обратный звонок</div>
                                                  </div>
                                              </div>
@@ -1406,7 +1523,7 @@
                                                  </div>
                                              </div>
                                              <div class="slide-up-in-view__container">
-                                                 <div class="primary-button__arrow slide-up-in-view duration-1 ">
+                                                 <div class="primary-button__arrow duration-1 ">
                                                      <svg class="icon-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                          <path d="M14.4297 5.92969L20.4997 11.9997L14.4297 18.0697" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                                          <path d="M3.5 12H20.33" stroke="#FFFEF8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1428,6 +1545,6 @@
      <script src="../assets/js/jquery.min.js"></script>
      <script src="../assets/js/swiper.js"></script>
      <script src="../assets/js/scrollreveal.js"></script>
-     <script src="../assets/js/main7.js"></script>
+     <script src="../assets/js/main8.js"></script>
 </body>
 </html>
