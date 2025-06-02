@@ -320,25 +320,13 @@ $(document).ready(function() {
             direction: 'horizontal',
             loop: false,
             slidesPerView: 1,
+            spaceBetween: 14,
             //effect: 'creative',
-            creativeEffect: {},
+            //creativeEffect: {},
             speed: 1000,
             navigation: {
                 nextEl: '.interiors-swiper__next',
                 prevEl: '.interiors-swiper__prev',
-            },
-            on: {
-                slidePrevTransitionStart: s => {
-
-                }
-                ,
-                slidePrevTransitionEnd: s => {
-
-                }
-                ,
-                slideNextTransitionStart: s => {
-
-                }
             }
         });
     }

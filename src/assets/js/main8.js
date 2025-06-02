@@ -808,7 +808,8 @@ $(document).ready(function() {
             loop: false,
             slidesPerView: 1,
             //effect: 'creative',
-            creativeEffect: {},
+            //creativeEffect: {},
+            spaceBetween: 14,
             speed: 1000,
             navigation: {
                 nextEl: '.interiors-swiper__next',

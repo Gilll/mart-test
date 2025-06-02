@@ -102,6 +102,11 @@ $vh: calc(100vh/700);
     }
   }
 
+  .price-supervision__img.big-img {
+    width: 100vw;
+    margin-left: -1.6rem;
+  }
+
   .result-swiper__text {
     font-size: 1rem;
     right: unset;
@@ -137,7 +142,7 @@ $vh: calc(100vh/700);
 
   .menu-is-open .header__menu li {
     transform: translateX(0);
-    transition: 1s 0s;
+    transition: 1s 1s;
     &:nth-child(2) {
       transition: 1s 1.1s;
     }
