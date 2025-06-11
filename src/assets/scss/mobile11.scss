@@ -14,7 +14,11 @@ $vh: calc(100vh/700);
   display: none;
 }
 
-@media (max-width: 48em) {
+.red-text {
+  color: red !important;
+}
+
+@media (max-width: 480em) {
   body {
     line-height: 1.2;
     font-size: 1.4rem;
@@ -479,9 +483,8 @@ $vh: calc(100vh/700);
   }
 
   .projects-top {
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
-    height: auto !important;
+    padding-bottom: 8rem;
+    height: unset !important;
     position: relative !important;
     z-index: 3;
   }
@@ -937,8 +940,7 @@ $vh: calc(100vh/700);
   }
 
   .projects {
-    min-height: 0;;
-    overflow-y: hidden;
+    min-height: 0;
   }
 
   .gray-line {
@@ -3862,6 +3864,78 @@ $vh: calc(100vh/700);
   .header {
     opacity: 1;
     transition: opacity 1s, width 0s;
+  }
+}
+
+@media screen and (orientation: landscape) {
+
+}
+
+html.horizontal {
+  font-size: 10px;
+  .intoAnimation .projects-swiper-slide__content {
+    bottom: 10rem;
+  }
+  .projects-swiper-slide__bl-text {
+    display: none;
+  }
+  .intoAnimation .projects__gray-line {
+    bottom: 13.5rem;
+  }
+  .about-advantages__img {
+    margin-left: calc((-100vw + 36.1rem)/2);
+  }
+  .prices-design__img-animation {
+    height: 34.8rem;
+    width: 100%;
+  }
+  .prices-design__img {
+    width: 100%;
+  }
+  .prices-design__img img {
+    width: 100%;
+  }
+  .project__content {
+    bottom: 7.5rem;
+  }
+  .project__anchor {
+    bottom: 5rem;
+  }
+  .architecture-main__description {
+    display: none;
+  }
+  .architecture-main__text-top {
+    display: none;
+  }
+  .architecture-main__text {
+    display: none;
+  }
+  .complectation__content-bottom {
+    display: none;
+  }
+  .complectation__content {
+    height: unset;
+  }
+  .complectation__gray-line {
+    bottom: 0;
+  }
+  .complectation__button-anchor {
+    bottom: -3rem;
+  }
+  .design-main__props-wrapper {
+    display: none;
+  }
+  .design-main__text {
+    display: none;
+  }
+  .design-main__description {
+    display: none;
+  }
+  .vision-main__bottom {
+    display: none;
+  }
+  .vision-main__sub-title {
+    display: none;
   }
 }
 
