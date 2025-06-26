@@ -894,6 +894,10 @@ $(document).ready(function() {
 
     })
 
+    $("#accept-cookies").click(function () {
+        $(".cookies-wrapper").addClass("cookies-accepted");
+    })
+
     setTimeout(function () {
         $("body").removeClass("isLoading").addClass("intoAnimation")
     },300)
